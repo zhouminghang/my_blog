@@ -254,7 +254,9 @@
 <li>rmdir folderName1<h2 id="3-创建一个文件"><a href="#3-创建一个文件" class="headerlink" title="3.创建一个文件"></a>3.创建一个文件</h2><h3 id="方法1：使用echo命令"><a href="#方法1：使用echo命令" class="headerlink" title="方法1：使用echo命令"></a>方法1：使用echo命令</h3></li>
 </ul>
 <ol>
-<li><code>echo &#39;文件里的内容&#39; &gt;&gt; 文件名称</code><ul>
+<li><code>echo &#39;文件里的内容&#39; &gt;&gt; 文件名称</code></li>
+</ol>
+<ul>
 <li>内容必须用’单引’或者”双引”引起来</li>
 <li>只写引号，不写内容，内容为空</li>
 <li>关于尖括号的区别：<ul>
@@ -265,15 +267,17 @@
 <li><blockquote>
 <blockquote>
 <p>两个尖括号，表示追加到</p>
-<h3 id="举例：-创建一个test文本文件-内容为空（以-txt格式为例）"><a href="#举例：-创建一个test文本文件-内容为空（以-txt格式为例）" class="headerlink" title="举例： 创建一个test文本文件,内容为空（以.txt格式为例）"></a>举例： 创建一个test文本文件,内容为空（以.txt格式为例）</h3></blockquote>
+<h3 id="举例：-创建一个test文本文件-内容为空（以-txt格式为例）"><a href="#举例：-创建一个test文本文件-内容为空（以-txt格式为例）" class="headerlink" title="举例： 创建一个test文本文件,内容为空（以.txt格式为例）"></a>举例： 创建一个test文本文件,内容为空（以.txt格式为例）</h3><ul>
+<li>echo ‘’ &gt;&gt; test.txt<h3 id="向test-txt文件追加内容"><a href="#向test-txt文件追加内容" class="headerlink" title="向test.txt文件追加内容"></a>向test.txt文件追加内容</h3></li>
+<li>echo ‘哈哈，我是TXT文本1’ &gt;&gt; test.txt<h3 id="方法2：-使用touch命令"><a href="#方法2：-使用touch命令" class="headerlink" title="方法2： 使用touch命令"></a>方法2： 使用touch命令</h3></li>
+</ul>
+</blockquote>
 </blockquote>
 </li>
 </ul>
 </li>
-<li>echo ‘’ &gt;&gt; test.txt<h3 id="向test-txt文件追加内容"><a href="#向test-txt文件追加内容" class="headerlink" title="向test.txt文件追加内容"></a>向test.txt文件追加内容</h3></li>
-<li>echo ‘哈哈，我是TXT文本1’ &gt;&gt; test.txt<h3 id="方法2：-使用touch命令"><a href="#方法2：-使用touch命令" class="headerlink" title="方法2： 使用touch命令"></a>方法2： 使用touch命令</h3></li>
 </ul>
-</li>
+<ol>
 <li><code>touch + 空格 + 文件名称</code><h3 id="举例：-创建test2-txt文件"><a href="#举例：-创建test2-txt文件" class="headerlink" title="举例： 创建test2.txt文件"></a>举例： 创建test2.txt文件</h3></li>
 </ol>
 <ul>
