@@ -229,6 +229,113 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-12-Linux常用的命令" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/03/12-Linux常用的命令/" class="article-date">
+      <time datetime="2017-02-03T10:02:34.212Z" itemprop="datePublished">2017-02-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="Linux操作系统下最常用的简单命令："><a href="#Linux操作系统下最常用的简单命令：" class="headerlink" title="Linux操作系统下最常用的简单命令："></a>Linux操作系统下最常用的简单命令：</h1><h2 id="1-创建文件夹"><a href="#1-创建文件夹" class="headerlink" title="1.创建文件夹"></a>1.创建文件夹</h2><ul>
+<li><code>mkdir + 空格 + 文件夹名称</code></li>
+<li>mkdir： make-创建、 directory-目录<h3 id="举例：-创建一个folderName1的文件夹"><a href="#举例：-创建一个folderName1的文件夹" class="headerlink" title="举例： 创建一个folderName1的文件夹"></a>举例： 创建一个folderName1的文件夹</h3></li>
+<li>mkdir folderName1<h2 id="2-删除文件夹"><a href="#2-删除文件夹" class="headerlink" title="2.删除文件夹"></a>2.删除文件夹</h2></li>
+<li><code>rmdir + 空格 + 文件夹名称</code></li>
+<li>rmdir： remove-移除、 dir-目录缩写<h3 id="举例：删除folderName1文件夹"><a href="#举例：删除folderName1文件夹" class="headerlink" title="举例：删除folderName1文件夹"></a>举例：删除folderName1文件夹</h3></li>
+<li>rmdir folderName1<h2 id="3-创建一个文件"><a href="#3-创建一个文件" class="headerlink" title="3.创建一个文件"></a>3.创建一个文件</h2><h3 id="方法1：使用echo命令"><a href="#方法1：使用echo命令" class="headerlink" title="方法1：使用echo命令"></a>方法1：使用echo命令</h3></li>
+</ul>
+<ol>
+<li><code>echo &#39;文件里的内容&#39; &gt;&gt; 文件名称</code><ul>
+<li>内容必须用’单引’或者”双引”引起来</li>
+<li>只写引号，不写内容，内容为空</li>
+<li>关于尖括号的区别：<ul>
+<li><blockquote>
+<p>一个尖括号，表示输出到</p>
+</blockquote>
+</li>
+<li><blockquote>
+<blockquote>
+<p>两个尖括号，表示追加到</p>
+<h3 id="举例：-创建一个test文本文件-内容为空（以-txt格式为例）"><a href="#举例：-创建一个test文本文件-内容为空（以-txt格式为例）" class="headerlink" title="举例： 创建一个test文本文件,内容为空（以.txt格式为例）"></a>举例： 创建一个test文本文件,内容为空（以.txt格式为例）</h3></blockquote>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>echo ‘’ &gt;&gt; test.txt<h3 id="向test-txt文件追加内容"><a href="#向test-txt文件追加内容" class="headerlink" title="向test.txt文件追加内容"></a>向test.txt文件追加内容</h3></li>
+<li>echo ‘哈哈，我是TXT文本1’ &gt;&gt; test.txt<h3 id="方法2：-使用touch命令"><a href="#方法2：-使用touch命令" class="headerlink" title="方法2： 使用touch命令"></a>方法2： 使用touch命令</h3></li>
+</ul>
+</li>
+<li><code>touch + 空格 + 文件名称</code><h3 id="举例：-创建test2-txt文件"><a href="#举例：-创建test2-txt文件" class="headerlink" title="举例： 创建test2.txt文件"></a>举例： 创建test2.txt文件</h3></li>
+</ol>
+<ul>
+<li>touch test2.txt<h2 id="4-删除文件"><a href="#4-删除文件" class="headerlink" title="4.删除文件"></a>4.删除文件</h2></li>
+<li><code>rm + 空格 + fileName（文件名称）</code><h3 id="举例：删除上边刚创建的文件"><a href="#举例：删除上边刚创建的文件" class="headerlink" title="举例：删除上边刚创建的文件"></a>举例：删除上边刚创建的文件</h3></li>
+<li>rm test2.txt</li>
+<li>该命令有<code>提示功能</code>：提示是否删除该文件？ 选择<code>y</code><h3 id="关于rm的参数-rf："><a href="#关于rm的参数-rf：" class="headerlink" title="关于rm的参数-rf："></a>关于rm的参数-rf：</h3></li>
+<li><code>rm -rf test2.txt</code></li>
+<li>-rf 是参数，<code>不能乱用</code>！！！</li>
+<li>功能：强制删除</li>
+<li>不会像之前的没加参数的命令，不会提示是否删除，直接强制删除<h3 id="不建议，Linux下不建议使用-rf"><a href="#不建议，Linux下不建议使用-rf" class="headerlink" title="不建议，Linux下不建议使用-rf"></a>不建议，Linux下不建议使用-rf</h3></li>
+<li>为什么？<ul>
+<li>比如<code>rm * -rf</code></li>
+<li>删除所有，而Linux所有的文件都在根目录下，会导致系统崩溃</li>
+<li><code>特别强调</code>！！！<code>不能乱用</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="5-切换到根目录"><a href="#5-切换到根目录" class="headerlink" title="5.切换到根目录"></a>5.切换到根目录</h2><ul>
+<li><code>cd /</code></li>
+<li>cd： 进入/切换 到某个目录下</li>
+<li>/: <code>左斜杠</code>，在Linux操作系统下表示根目录<h3 id="关于cd的使用小技巧："><a href="#关于cd的使用小技巧：" class="headerlink" title="关于cd的使用小技巧："></a>关于cd的使用小技巧：</h3></li>
+<li>为了方便返回之前的目录，而不用级级回退或进入</li>
+<li>可使用<code>cd -</code>，直接返回<code>上次</code>保留的目录<code>位置</code><h3 id="Linux与windows操作系统下根目录的写法："><a href="#Linux与windows操作系统下根目录的写法：" class="headerlink" title="Linux与windows操作系统下根目录的写法："></a>Linux与windows操作系统下根目录的写法：</h3></li>
+<li><code>Linux</code>下不分磁盘，所有的文件都挂载在根目录下，<ul>
+<li>/:左斜杠，代表Linux下的根目录</li>
+</ul>
+</li>
+<li><code>Windows</code> OS 分很详细的磁盘结构，分盘很明确<ul>
+<li>\：使用右斜杠<h2 id="6-怎么查看目录"><a href="#6-怎么查看目录" class="headerlink" title="6.怎么查看目录"></a>6.怎么查看目录</h2></li>
+</ul>
+</li>
+<li><code>ls</code> 命令</li>
+<li>显示该目录下的所有文件或文件夹<h2 id="7-Linux的工具"><a href="#7-Linux的工具" class="headerlink" title="7.Linux的工具"></a>7.Linux的工具</h2></li>
+<li>vi 和 vim 文本编辑器</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-11-https" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -691,55 +798,6 @@
       
         <p class="article-more-link">
           <a  href="/2017/01/09/03-浅析AngularJs/#more">展开全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-00-markdown" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/01/09/00-markdown/" class="article-date">
-      <time datetime="2017-01-09T11:41:05.161Z" itemprop="datePublished">2017-01-09</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <hr>
-<h2 id="怎么使用Markdown编译博客"><a href="#怎么使用Markdown编译博客" class="headerlink" title="怎么使用Markdown编译博客"></a>怎么使用Markdown编译博客</h2><p>##MaHua是什么?<br>一个在线编辑markdown文档的编辑器</p>
-<p>向Mac下优秀的markdown编辑器mou致敬</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a  href="/2017/01/09/00-markdown/#more">展开全文 >></a>
         </p>
       
       <div class="clearfix"></div>
