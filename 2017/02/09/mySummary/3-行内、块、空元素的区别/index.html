@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="谈谈我对 行内元素/块级元素/空元素 的区别的认识之前一直很熟悉 行内元素、块级元素，后来听说竟然还有空元素一说，于是就赶紧总结一下，增长一下见识
+先说说行内元素行内元素又叫内联元素或者行内标签 
+它的特点有
+设置宽高无效，只能由内容撑起来，即行内元素设置width,height属性无效.
+行内元素不会独占一行,相邻的行内元素会排列在同一行里,直到一行排不下,才会换行,其宽度随元素的内容而变化.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta property="og:url" content="http://yoursite.com/2017/02/09/mySummary/3-行内、块、空元素的区别/index.html">
+<meta property="og:site_name" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta property="og:description" content="谈谈我对 行内元素/块级元素/空元素 的区别的认识之前一直很熟悉 行内元素、块级元素，后来听说竟然还有空元素一说，于是就赶紧总结一下，增长一下见识
+先说说行内元素行内元素又叫内联元素或者行内标签 
+它的特点有
+设置宽高无效，只能由内容撑起来，即行内元素设置width,height属性无效.
+行内元素不会独占一行,相邻的行内元素会排列在同一行里,直到一行排不下,才会换行,其宽度随元素的内容而变化.">
+<meta property="og:updated_time" content="2017-02-09T16:06:09.832Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta name="twitter:description" content="谈谈我对 行内元素/块级元素/空元素 的区别的认识之前一直很熟悉 行内元素、块级元素，后来听说竟然还有空元素一说，于是就赶紧总结一下，增长一下见识
+先说说行内元素行内元素又叫内联元素或者行内标签 
+它的特点有
+设置宽高无效，只能由内容撑起来，即行内元素设置width,height属性无效.
+行内元素不会独占一行,相邻的行内元素会排列在同一行里,直到一行排不下,才会换行,其宽度随元素的内容而变化.">
+  
+    <link rel="alternative" href="/atom.xml" title="风吹过的，路依然远，你的故事讲到了哪，Var`Var..." type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/zz.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/cc.png" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">呆萌小二郎</a></h1>
+        </hgroup>
+
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=&#51;&#53;&#51;&#51;&#56;&#57;&#52;&#57;&#55;&#64;&#113;&#113;&#46;&#99;&#111;&#109;" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/zhouminghang" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">我是呆萌小二郎，我就是我，绽放和你不一样的烟火！</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">呆萌小二郎</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/cc.png" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">呆萌小二郎</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=&#51;&#53;&#51;&#51;&#56;&#57;&#52;&#57;&#55;&#64;&#113;&#113;&#46;&#99;&#111;&#109;" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/zhouminghang" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-mySummary/3-行内、块、空元素的区别" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/09/mySummary/3-行内、块、空元素的区别/" class="article-date">
+      <time datetime="2017-02-09T11:53:53.141Z" itemprop="datePublished">2017-02-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="谈谈我对-行内元素-块级元素-空元素-的区别的认识"><a href="#谈谈我对-行内元素-块级元素-空元素-的区别的认识" class="headerlink" title="谈谈我对 行内元素/块级元素/空元素 的区别的认识"></a>谈谈我对 行内元素/块级元素/空元素 的区别的认识</h1><p>之前一直很熟悉 行内元素、块级元素，后来听说竟然还有空元素一说，于是就赶紧总结一下，增长一下见识</p>
+<h2 id="先说说行内元素"><a href="#先说说行内元素" class="headerlink" title="先说说行内元素"></a>先说说行内元素</h2><p>行内元素又叫内联元素或者行内标签 </p>
+<h3 id="它的特点有"><a href="#它的特点有" class="headerlink" title="它的特点有"></a>它的特点有</h3><ul>
+<li>设置宽高无效，只能由内容撑起来，即行内元素设置width,height属性无效.</li>
+<li>行内元素不会独占一行,相邻的行内元素会排列在同一行里,直到一行排不下,才会换行,其宽度随元素的内容而变化. </li>
+<li>设置上下margin无效，左右margin有效</li>
+<li>设置上下padding无效，左右padding有效</li>
+<li>行内元素的margin和padding属性,水平方向的padding-left,padding-right,margin-left,margin-right都产生边距效果,但竖直方向的padding-top,padding-bottom,margin-top,margin-bottom却不会产生边距效果.</li>
+<li>行内元素对应于display:inline<h3 id="常见的行内元素有："><a href="#常见的行内元素有：" class="headerlink" title="常见的行内元素有："></a>常见的行内元素有：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">span、em、i、b、strong、a、img、input、br、select、textarea、q、bdo、sub、sup...等等</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h2><p>块级元素又叫块级标签</p>
+<h3 id="它的特点有-1"><a href="#它的特点有-1" class="headerlink" title="它的特点有"></a>它的特点有</h3><ul>
+<li>能够设置宽高，即块级元素可以设置width,height属性. </li>
+<li>块级元素会独占一行,默认情况下,其宽度自动填满其父元素宽度. </li>
+<li>块级元素即使设置了宽度,仍然是独占一行</li>
+<li>块级元素可以设置margin和padding属性，即上下左右margin有效，上下左右padding有效</li>
+<li>块级元素对应于display:block<h3 id="常见的块级元素有："><a href="#常见的块级元素有：" class="headerlink" title="常见的块级元素有："></a>常见的块级元素有：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">div、p、h1~h6、</div><div class="line">ul、ol、li、</div><div class="line">dl、dt、dd、</div><div class="line">form、table、hr、</div><div class="line">blockquote <span class="comment">// 浏览器以缩进方式显示被引用的文本，通常定义一段长的文本引用、</span></div><div class="line">address、menu、pre.....等等</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="空元素"><a href="#空元素" class="headerlink" title="空元素"></a>空元素</h2><p>这个我之前不了解，但了解了特性就很简单了，大家都看一看记住就行了</p>
+<h3 id="什么是-空元素？"><a href="#什么是-空元素？" class="headerlink" title="什么是 空元素？"></a>什么是 空元素？</h3><ul>
+<li>没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的。<br><br> 就是没有关闭标签的空元素（<br> 标签定义换行）。<br>在 XHTML、XML 以及未来版本的 HTML 中，所有元素都必须被关闭。</li>
+<li>由于HTML元素的内容是开始标签与结束标签之间的内容。而某些 HTML 元素具有空内容。那些含有空内容的HTML元素，就是空元素。</li>
+<li>简单的说就是：没有 HTML 内容的元素被称为空元素。空元素是在开始标签中关闭的。</li>
+</ul>
+<h3 id="空元素最显著的特点？"><a href="#空元素最显著的特点？" class="headerlink" title="空元素最显著的特点？"></a>空元素最显著的特点？</h3><ul>
+<li>没有HTML内容</li>
+<li>单标签，只有开始标签，没有结束标签</li>
+</ul>
+<h3 id="常见的空元素有哪些？"><a href="#常见的空元素有哪些？" class="headerlink" title="常见的空元素有哪些？"></a>常见的空元素有哪些？</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;br&gt; <span class="comment">//换行 </span></div><div class="line">&lt;input&gt; <span class="comment">//文本框等</span></div><div class="line">&lt;img&gt;  <span class="comment">//图片</span></div><div class="line">&lt;hr&gt;  <span class="comment">//分割线</span></div><div class="line">...等等</div></pre></td></tr></table></figure>
+<h3 id="空标签注意的地方？"><a href="#空标签注意的地方？" class="headerlink" title="空标签注意的地方？"></a>空标签注意的地方？</h3><p><br> 就是没有关闭标签的空元素（<br> 标签定义换行）。<br>在开始标签中添加斜杠，比如 <br>，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。<br>即使 <br> 在所有浏览器中都是有效的，但使用 <br> 其实是更长远的保障。</p>
+<h2 id="HTML-元素语法"><a href="#HTML-元素语法" class="headerlink" title="HTML 元素语法"></a>HTML 元素语法</h2><ul>
+<li>HTML 元素以开始标签起始</li>
+<li>HTML 元素以结束标签终止</li>
+<li>元素的内容是开始标签与结束标签之间的内容</li>
+<li>某些 HTML 元素具有空内容（empty content）</li>
+<li>空元素在开始标签中进行关闭（以开始标签的结束而结束）</li>
+<li>大多数 HTML 元素可拥有属性</li>
+</ul>
+<h2 id="HTML-提示：使用小写标签"><a href="#HTML-提示：使用小写标签" class="headerlink" title="HTML 提示：使用小写标签"></a>HTML 提示：使用小写标签</h2><p>HTML 标签对大小写不敏感：</p><p> 等同于 </p><p>。许多网站都使用大写的 HTML 标签。<br>W3School 使用的是小写标签，因为万维网联盟（W3C）在 HTML 4 中推荐使用小写，而在未来 (X)HTML 版本中强制使用小写。</p>
+<h2 id="行内元素与块级元素的嵌套规则？"><a href="#行内元素与块级元素的嵌套规则？" class="headerlink" title="行内元素与块级元素的嵌套规则？"></a>行内元素与块级元素的嵌套规则？</h2><p>大多数 HTML 元素可以嵌套（可以包含其他 HTML 元素）。<br>HTML 文档由嵌套的 HTML 元素构成。</p>
+<ul>
+<li>块级元素可以嵌套内联元素或者某些块级元素</li>
+<li>内联元素只能嵌套内联元素，不能嵌套块级元素<h3 id="比较典型的特例"><a href="#比较典型的特例" class="headerlink" title="比较典型的特例"></a>比较典型的特例</h3></li>
+<li>a无所不能，但a不能嵌套它本身</li>
+<li>p标签不能嵌套块级元素</li>
+<li>h1~h6、p、dt标签：只能包含内联元素，不能再包含块级元素</li>
+<li>li很强大，它可以包含div，甚至可以包含它的父元素ul或者ol</li>
+</ul>
+<h2 id="怎么改变元素的排列方式，通过设置display属性？"><a href="#怎么改变元素的排列方式，通过设置display属性？" class="headerlink" title="怎么改变元素的排列方式，通过设置display属性？"></a>怎么改变元素的排列方式，通过设置display属性？</h2><h3 id="常见的属性值有："><a href="#常见的属性值有：" class="headerlink" title="常见的属性值有："></a>常见的属性值有：</h3><p>diaplay: none    此元素不会被显示。<br>diaplay: block    此元素将显示为块级元素，此元素前后会带有换行符。<br>diaplay: inline    默认。此元素会被显示为内联元素，元素前后没有换行符。<br>diaplay: inline-block    行内块元素。（CSS2.1 新增的值）<br>diaplay: list-item    此元素会作为列表显示。<br>diaplay: inherit    规定应该从父元素继承 display 属性的值。</p>
+<h3 id="可做了解，不做深入："><a href="#可做了解，不做深入：" class="headerlink" title="可做了解，不做深入："></a>可做了解，不做深入：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">diaplay: run-<span class="keyword">in</span>	此元素会根据上下文作为块级元素或内联元素显示。</div><div class="line">diaplay: compact	CSS 中有值 compact，不过由于缺乏广泛支持，已经从 CSS2<span class="number">.1</span> 中删除。</div><div class="line">diaplay: marker	CSS 中有值 marker，不过由于缺乏广泛支持，已经从 CSS2<span class="number">.1</span> 中删除。</div><div class="line">diaplay: table	此元素会作为块级表格来显示（类似 &lt;table&gt;），表格前后带有换行符。</div><div class="line">diaplay: inline-table	此元素会作为内联表格来显示（类似 &lt;table&gt;），表格前后没有换行符。</div><div class="line">diaplay: table-row-group	此元素会作为一个或多个行的分组来显示（类似 &lt;tbody&gt;）。</div><div class="line">diaplay: table-header-group	此元素会作为一个或多个行的分组来显示（类似 &lt;thead&gt;）。</div><div class="line">diaplay: table-footer-group	此元素会作为一个或多个行的分组来显示（类似 &lt;tfoot&gt;）。</div><div class="line">diaplay: table-row	此元素会作为一个表格行显示（类似 &lt;tr&gt;）。</div><div class="line">diaplay: table-column-group	此元素会作为一个或多个列的分组来显示（类似 &lt;colgroup&gt;）。</div><div class="line">diaplay: table-column	此元素会作为一个单元格列显示（类似 &lt;col&gt;）</div><div class="line">diaplay: table-cell	此元素会作为一个表格单元格显示（类似 &lt;td&gt; 和 &lt;th&gt;）</div><div class="line">diaplay: table-caption	此元素会作为一个表格标题显示（类似 &lt;caption&gt;）</div></pre></td></tr></table></figure>
+<h2 id="display-inline-block行内块元素的兼容性问题？"><a href="#display-inline-block行内块元素的兼容性问题？" class="headerlink" title="display: inline-block行内块元素的兼容性问题？"></a>display: inline-block行内块元素的兼容性问题？</h2><p>给元素设置display: inline-block属性，元素将变成行内块元素，结合盒子模型理解，该元素整体以内联元素表现，但它的内容以块状元素表现。简单来说就是将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内，允许空格。但是这个属性目前不是所有的浏览器都支持，只有Opera和Safari支持，FireFox3和IE8据说将会支持，Firefox2和IE使用特殊办法可以实现这种效果，下面就来探讨一下</p>
+<h3 id="在火狐浏览器上存在的问题"><a href="#在火狐浏览器上存在的问题" class="headerlink" title="在火狐浏览器上存在的问题"></a>在火狐浏览器上存在的问题</h3><p>在Firefox2中有-moz-inline-stack和-moz-inline-box实现，但是这两个私有属性在某些情况下都会有异常，具体如下：<br>1、display:-moz-inline-stack<br>“当它所应用的外包装器（wrapper）的display为inline的时候，它所包含的a或button将无法点击或无法选取，需要通过position:relative还hack掉这个bug”–乌龙茶<br>2、display:-moz-inline-box<br>使用这一属性后，text-align就会出问题，必须使用Firefox的私有属性 -moz-box-align来解决<br>所以，建议不要使用-moz-inline-box，还是使用-moz-inline-stack</p>
+<h3 id="在IE浏览器上怎么实现的"><a href="#在IE浏览器上怎么实现的" class="headerlink" title="在IE浏览器上怎么实现的"></a>在IE浏览器上怎么实现的</h3><p>在IE（以下IE8除外）下，如果对内联元素，比如a或span元素，使用inline-block属性是有效的，似乎IE是支持的，其实是触发了IE的layout，从而拥有了inline-block属性的表症。这样我们就有了一种在IE下实现display:inline-block效果的两种方法：</p>
+<p>1、先用display:inline-block属性触发块元素，然后再定义display:inline，让块元素呈递为内联对象（原理：这是IE的一个经典bug，如果先定义了display:inline-block，然后再设置display为inline或block，layout不会消失），代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">div &#123;<span class="attr">display</span>:inline-block;&#125;</div><div class="line">div &#123;<span class="attr">display</span>:inline;&#125;</div></pre></td></tr></table></figure>
+<p>2、直接让块元素设置为内联对象(display:inline)，然后通过zoom:1触发块元素的layout，代码如下：<br>div {display:inline; zoom:1;}</p>
+<h3 id="怎么兼容所有浏览器？"><a href="#怎么兼容所有浏览器？" class="headerlink" title="怎么兼容所有浏览器？"></a>怎么兼容所有浏览器？</h3><p>那么为了能够让所有浏览器支持display:inline-block，综合一下，最终的实现代码如下（参考怿飞：模拟兼容性的 inline-block 属性）：</p>
+<p>display:inline-block; /<em>一方面Firefox3 beta、IE8 beta、Opera、Safari 支持，另一方面下触发IE下inline 元素的 hasLayout</em>/</p>
+<p>display:-moz-inline-stack; /<em> Firefox 的私有属性，需要时还必须用到position:relative解决上面提到的bug </em>/</p>
+<p>zoom:1; /<em>同样是IE 下触发 hasLayout</em>/<br><em>display:inline; /</em>一旦IE 下触发了 hasLayout，设置 block 元素为 inline 会使 display:inline 效果与 display:inline-block 相似*/</p>
+<p>/<em>扩展一下一些其他可能用到的属性</em>/<br>text-indent:-9999px;<br><em>text-indent:0;<br>font-size:0;<br>line-height:0; /</em> 如需隐藏文字，可用这四个属性 <em>/<br>/</em>另外上面隐藏文字，还可以用更简化的方法：line-height:超级大值;font-size:0; */</p>
+<p>overflow:hidden; /<em> 隐藏溢出的内容 </em>/</p>
+<p>vertical-align:middle; /<em> 行内垂直居中，针对 Opera 比较大的偏离 </em>/</p>
+<p>width:？px; /<em>？为任意非auto值</em>/<br>height:？px; /<em>？为任意非auto值</em>/</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/02/09/mySummary/3-行内、块、空元素的区别/"></a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 呆萌小二郎 的个人博客">呆萌小二郎</a></p>
+        <p><span>发布时间:</span>2017年02月09日 - 19时53分</p>
+        <p><span>最后更新:</span>2017年02月10日 - 00时06分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/02/09/mySummary/3-行内、块、空元素的区别/" title="">http://yoursite.com/2017/02/09/mySummary/3-行内、块、空元素的区别/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/02/09/mySummary/3-行内、块、空元素的区别/　　作者: 呆萌小二郎" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/02/09/mySummary/4-h5语义化，新增标签/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/02/09/mySummary/2-我对WEB标准的认识/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#谈谈我对-行内元素-块级元素-空元素-的区别的认识"><span class="toc-number">1.</span> <span class="toc-text">谈谈我对 行内元素/块级元素/空元素 的区别的认识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#先说说行内元素"><span class="toc-number">1.1.</span> <span class="toc-text">先说说行内元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#它的特点有"><span class="toc-number">1.1.1.</span> <span class="toc-text">它的特点有</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见的行内元素有："><span class="toc-number">1.1.2.</span> <span class="toc-text">常见的行内元素有：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#块级元素"><span class="toc-number">1.2.</span> <span class="toc-text">块级元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#它的特点有-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">它的特点有</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见的块级元素有："><span class="toc-number">1.2.2.</span> <span class="toc-text">常见的块级元素有：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#空元素"><span class="toc-number">1.3.</span> <span class="toc-text">空元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是-空元素？"><span class="toc-number">1.3.1.</span> <span class="toc-text">什么是 空元素？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#空元素最显著的特点？"><span class="toc-number">1.3.2.</span> <span class="toc-text">空元素最显著的特点？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见的空元素有哪些？"><span class="toc-number">1.3.3.</span> <span class="toc-text">常见的空元素有哪些？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#空标签注意的地方？"><span class="toc-number">1.3.4.</span> <span class="toc-text">空标签注意的地方？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-元素语法"><span class="toc-number">1.4.</span> <span class="toc-text">HTML 元素语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-提示：使用小写标签"><span class="toc-number">1.5.</span> <span class="toc-text">HTML 提示：使用小写标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#行内元素与块级元素的嵌套规则？"><span class="toc-number">1.6.</span> <span class="toc-text">行内元素与块级元素的嵌套规则？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#比较典型的特例"><span class="toc-number">1.6.1.</span> <span class="toc-text">比较典型的特例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#怎么改变元素的排列方式，通过设置display属性？"><span class="toc-number">1.7.</span> <span class="toc-text">怎么改变元素的排列方式，通过设置display属性？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常见的属性值有："><span class="toc-number">1.7.1.</span> <span class="toc-text">常见的属性值有：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可做了解，不做深入："><span class="toc-number">1.7.2.</span> <span class="toc-text">可做了解，不做深入：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#display-inline-block行内块元素的兼容性问题？"><span class="toc-number">1.8.</span> <span class="toc-text">display: inline-block行内块元素的兼容性问题？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#在火狐浏览器上存在的问题"><span class="toc-number">1.8.1.</span> <span class="toc-text">在火狐浏览器上存在的问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在IE浏览器上怎么实现的"><span class="toc-number">1.8.2.</span> <span class="toc-text">在IE浏览器上怎么实现的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#怎么兼容所有浏览器？"><span class="toc-number">1.8.3.</span> <span class="toc-text">怎么兼容所有浏览器？</span></a></li></ol></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2017/02/09/mySummary/3-行内、块、空元素的区别/" data-title="" data-url="http://yoursite.com/2017/02/09/mySummary/3-行内、块、空元素的区别/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"null"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/02/09/mySummary/4-h5语义化，新增标签/" title="上一篇: ">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/02/09/mySummary/2-我对WEB标准的认识/" title="下一篇: ">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/02/11/mySummary/10-px,em,rem的兼容情况/">mySummary/10-px,em,rem的兼容情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/10/mySummary/9-px与em的区别/">mySummary/9-px与em的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/10/mySummary/8-精灵图的利弊/">mySummary/8-精灵图的利弊</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/10/mySummary/7-浏览器内核/">mySummary/7-浏览器内核</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/10/mySummary/6-总结一下常见的浏览器及内核/">mySummary/6-总结一下常见的浏览器及内核</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/09/mySummary/5-语义化的HTML结构/">mySummary/5-语义化的HTML结构</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/09/mySummary/4-h5语义化，新增标签/">mySummary/4-h5语义化，新增标签</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/09/mySummary/3-行内、块、空元素的区别/">mySummary/3-行内、块、空元素的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/09/mySummary/2-我对WEB标准的认识/">mySummary/2-我对WEB标准的认识</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/08/mySummary/1-总结笔记怎么理解前端/">mySummary/1-总结笔记怎么理解前端</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/08/14-Java环境配置/">14-Java环境配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/06/13-react入门/">13-react入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/03/12-Linux常用的命令/">12-Linux常用的命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/18/11-https/">11-https</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/18/10-http/">10-http</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/12/09-ng之路由/">09-ng之路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/12/08-ng之过滤器/">08-ng之过滤器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/11/07-ng-指令/">07-ng-指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/10/06-网络模型/tcp/udp/">06-网络模型/tcp/udp</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/10/05-angularjs复习/">05-angularjs复习</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/10/04-拷贝文件的三种方式/">04-拷贝文件的三种方式</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/09/03-浅析AngularJs/">03-浅析AngularJs</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/09/00-markdown/">00-markdown</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/09/02-gulp构建自动化工程/">02-gulp构建自动化工程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/09/01-前言/">致正在路上的的小伙伴们</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/07/hello-world/">Hello World</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 呆萌小二郎
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >Var到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
