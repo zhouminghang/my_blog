@@ -6,14 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | 风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
+  <title>风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Flex弹性盒子用了React-native，我想你一定会和我一样想果断抛弃Web-app，最近用React-native进行APP的开发，发现弹性盒子真的很有型，下面就简单介绍一下Flex和相应的属性">
+<meta property="og:type" content="article">
 <meta property="og:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/02/17/mySummary/18-flex弹性盒子布局/index.html">
 <meta property="og:site_name" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta property="og:description" content="Flex弹性盒子用了React-native，我想你一定会和我一样想果断抛弃Web-app，最近用React-native进行APP的开发，发现弹性盒子真的很有型，下面就简单介绍一下Flex和相应的属性">
+<meta property="og:image" content="https://buzheng.org/images/flexbox.png">
+<meta property="og:updated_time" content="2017-02-17T13:38:45.555Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta name="twitter:description" content="Flex弹性盒子用了React-native，我想你一定会和我一样想果断抛弃Web-app，最近用React-native进行APP的开发，发现弹性盒子真的很有型，下面就简单介绍一下Flex和相应的属性">
+<meta name="twitter:image" content="https://buzheng.org/images/flexbox.png">
   
     <link rel="alternative" href="/atom.xml" title="风吹过的，路依然远，你的故事讲到了哪，Var`Var..." type="application/atom+xml">
   
@@ -149,236 +155,181 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-mySummary/18-flex弹性盒子布局" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h1 id="Flex弹性盒子"><a href="#Flex弹性盒子" class="headerlink" title="Flex弹性盒子"></a>Flex弹性盒子</h1><h2 id="用了React-native，我想你一定会和我一样想果断抛弃Web-app，最近用React-native进行APP的开发，发现弹性盒子真的很有型，下面就简单介绍一下Flex和相应的属性"><a href="#用了React-native，我想你一定会和我一样想果断抛弃Web-app，最近用React-native进行APP的开发，发现弹性盒子真的很有型，下面就简单介绍一下Flex和相应的属性" class="headerlink" title="用了React-native，我想你一定会和我一样想果断抛弃Web-app，最近用React-native进行APP的开发，发现弹性盒子真的很有型，下面就简单介绍一下Flex和相应的属性"></a>用了React-native，我想你一定会和我一样想果断抛弃Web-app，最近用React-native进行APP的开发，发现弹性盒子真的很有型，下面就简单介绍一下Flex和相应的属性</h2><a id="more"></a>
+<h3 id="1-什么是Flex"><a href="#1-什么是Flex" class="headerlink" title="1. 什么是Flex"></a>1. 什么是Flex</h3><ul>
+<li>Flex box，简称弹性盒子，可以根据设备的宽度做到自适应。</li>
+<li>Flex布局，也叫弹性布局，它是为了适应不同的屏幕尺寸和不同的设备类型而提出的一种布局方式。</li>
+<li>使用弹性布局，首先要有一个弹性容器，就是给弹性子元素的父元素设置display：flex或者inline-flex</li>
+</ul>
+<h3 id="2-需要理解的概念"><a href="#2-需要理解的概念" class="headerlink" title="2. 需要理解的概念"></a>2. 需要理解的概念</h3><p>下图是一个横向的，文本流从左到右的弹性布局图示。<br><img src="https://buzheng.org/images/flexbox.png" alt=""></p>
+<p>看完图，大概对弹性布局有也一定的概念，接下来讲讲它具体的概念</p>
+<h4 id="2-1-弹性容器"><a href="#2-1-弹性容器" class="headerlink" title="2.1 弹性容器"></a>2.1 弹性容器</h4><blockquote>
+<p>弹性容器(Flex container), 指一个声明为 flex 或者 inline-flex 的元素，是所有 Flex items 的父元素。</p>
+<h4 id="2-2-弹性项目"><a href="#2-2-弹性项目" class="headerlink" title="2.2 弹性项目"></a>2.2 弹性项目</h4><p>弹性项目(Flex item), 指 flex 容器内的直接孩子元素；弹性容器中的直接文本项默认为匿名弹性项目。</p>
+<h4 id="2-3-主轴和侧轴"><a href="#2-3-主轴和侧轴" class="headerlink" title="2.3 主轴和侧轴"></a>2.3 主轴和侧轴</h4><p>主轴(main axis)和侧轴(cross axis), 类似于二维中的 X 轴和 Y 轴，主轴由属性 flex-direction 来定义，与主轴垂直的轴则是侧轴</p>
+</blockquote>
+<h3 id="3-怎么定义弹性布局"><a href="#3-怎么定义弹性布局" class="headerlink" title="3. 怎么定义弹性布局"></a>3. 怎么定义弹性布局</h3><p>要使用弹性布局，需要定义一个弹性容器（Flex container），通过声明 display 属性为 flex 或者 inline-flex 来将此元素定义为弹性容器。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">.flex &#123;</div><div class="line">   	   <span class="attr">display</span>: flex </div><div class="line">	  &#125;</div></pre></td></tr></table></figure>
+<h3 id="4-设置相关的属性"><a href="#4-设置相关的属性" class="headerlink" title="4. 设置相关的属性"></a>4. 设置相关的属性</h3><h4 id="4-1-定义排列的方向"><a href="#4-1-定义排列的方向" class="headerlink" title="4.1 定义排列的方向"></a>4.1 定义排列的方向</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">flex-direction : 	<span class="comment">//定义排列的方向</span></div><div class="line">			row   			<span class="comment">//默认值，主轴为水平，从左向右排列</span></div><div class="line">			row-reverse  	<span class="comment">//主轴为水平，从右向左排列</span></div><div class="line">			column       	<span class="comment">//主轴为垂直方向，从上向下排列</span></div><div class="line">			column-reverse <span class="comment">//主轴为垂直方向，从下向上排列</span></div></pre></td></tr></table></figure>
+<h4 id="4-2-定义换行"><a href="#4-2-定义换行" class="headerlink" title="4.2 定义换行"></a>4.2 定义换行</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">flex-wrap :  <span class="comment">//定义是否新行显示，以及新行的排列方向</span></div><div class="line">			nowrap <span class="comment">//默认值，显示在同一行，不换行</span></div><div class="line">			wrap   <span class="comment">// 一行显示不了时使用新行显示</span></div><div class="line">			wrap-reverse  <span class="comment">//同 wrap，但是从下向上显示</span></div></pre></td></tr></table></figure>
+<h4 id="4-3-flex-flow-是-flex-direction-和-flex-wrap-的简写方式"><a href="#4-3-flex-flow-是-flex-direction-和-flex-wrap-的简写方式" class="headerlink" title="4.3 flex-flow 是 flex-direction 和 flex-wrap 的简写方式"></a>4.3 flex-flow 是 flex-direction 和 flex-wrap 的简写方式</h4><blockquote>
+<p>使用方法 flex-flow: &lt;‘flex-direction’&gt; || &lt;‘flex-wrap’&gt;<br>  默认值为： row nowrap</p>
+</blockquote>
+<h4 id="4-4-justify-content-定义弹性项目在主轴上的对齐方式"><a href="#4-4-justify-content-定义弹性项目在主轴上的对齐方式" class="headerlink" title="4.4  justify-content 定义弹性项目在主轴上的对齐方式"></a>4.4  justify-content 定义弹性项目在主轴上的对齐方式</h4><ul>
+<li>flex-start 默认值，从起始位置对齐，通常为左对齐</li>
+<li>flex-end 从结束位置对齐，通常为右对齐</li>
+<li>center 居中对齐</li>
+<li>space-between 两端对齐，平均间隔</li>
+<li>space-around 每个子元素都有相等的外边距，相邻元素外边距不会叠加</li>
+</ul>
+<h4 id="4-5-align-items-定义弹性项目在侧轴上的对齐方式"><a href="#4-5-align-items-定义弹性项目在侧轴上的对齐方式" class="headerlink" title="4.5 align-items 定义弹性项目在侧轴上的对齐方式"></a>4.5 align-items 定义弹性项目在侧轴上的对齐方式</h4><ul>
+<li>stretch 默认值，弹性项目在没指定高度或者高度为 auto 的情况下，则高度会占满空间</li>
+<li>flex-start 侧轴起点开始对齐</li>
+<li>flex-end 从侧轴结束位置对齐</li>
+<li>center 相对侧轴居中对齐</li>
+<li>baseline 与基线对齐</li>
+</ul>
+<h4 id="4-6-align-content-定义多行在侧轴的对齐方式，当只有一行时，不起作用"><a href="#4-6-align-content-定义多行在侧轴的对齐方式，当只有一行时，不起作用" class="headerlink" title="4.6 align-content 定义多行在侧轴的对齐方式，当只有一行时，不起作用"></a>4.6 align-content 定义多行在侧轴的对齐方式，当只有一行时，不起作用</h4><ul>
+<li>stretch 默认值，各行会伸展以占满整个纵轴空间</li>
+<li>flex-start 对齐到纵轴起点</li>
+<li>flex-end 对齐到纵轴终点</li>
+<li>center 相对纵轴中间对齐</li>
+<li>space-between 各行相对纵轴两端对齐，各行间隔相等</li>
+<li>space-around 各行都有相等的外边距，各行的外边距不会叠加</li>
+</ul>
+<h3 id="5-弹性项目的属性"><a href="#5-弹性项目的属性" class="headerlink" title="5.弹性项目的属性"></a>5.弹性项目的属性</h3><ul>
+<li>flex-grow 数字，定义弹性项目的放大比例，默认 0</li>
+<li>flex-shrink 数字，定义弹性项目的缩小比例，默认 1，值 0 表示不缩小</li>
+<li>flex-basis 数字，定义弹性项目的默认尺寸，</li>
+<li>flex 是 flex-grow flex-shrink flex-basis 的缩写，默认值为 0 1 auto</li>
+<li>align-self 定义此弹性项目本身的对齐方式，会覆盖弹性容器 align-items 定义的对齐方式<ul>
+<li>auto 从弹性容器继承</li>
+<li>stretch 弹性项目在没指定高度或者高度为 auto 的情况下，则高度会占满空间</li>
+<li>flex-start 侧轴起点开始对齐</li>
+<li>flex-end 从侧轴结束位置对齐</li>
+<li>center 相对侧轴居中对齐</li>
+<li>baseline 与基线对齐</li>
+</ul>
+</li>
+<li>order 数字，定义弹性项目的显示顺序，数字越小越靠前</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/17/mySummary/18-flex弹性盒子布局/" class="archive-article-date">
-  	<time datetime="2017-02-17T13:12:50.764Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/17/mySummary/18-flex弹性盒子布局/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/16/mySummary/17-http请求状态码都有哪些/" class="archive-article-date">
-  	<time datetime="2017-02-16T11:57:43.398Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-16</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/15/mySummary/16-栈内存与堆内存的区别/" class="archive-article-date">
-  	<time datetime="2017-02-15T15:36:00.727Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-15</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+  
+    <a href="/2017/02/16/mySummary/17-http请求状态码都有哪些/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/15/mySummary/15-git本地仓库使用/" class="archive-article-date">
-  	<time datetime="2017-02-15T12:50:00.734Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-15</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/15/mySummary/14-源代码管理工具/" class="archive-article-date">
-  	<time datetime="2017-02-15T10:48:11.180Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-15</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/15/mySummary/13-JavaScript中的数据类型/" class="archive-article-date">
-  	<time datetime="2017-02-15T07:50:38.905Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-15</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/14/mySummary/12-关于图片优化之智图/" class="archive-article-date">
-  	<time datetime="2017-02-14T12:29:45.820Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-14</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/14/mySummary/11-移动端优化/" class="archive-article-date">
-  	<time datetime="2017-02-14T12:28:19.060Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-14</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/11/mySummary/10-px,em,rem的兼容情况/" class="archive-article-date">
-  	<time datetime="2017-02-11T06:10:16.169Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-11</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/10/mySummary/09-px与em的区别/" class="archive-article-date">
-  	<time datetime="2017-02-10T05:58:35.573Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-10</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
+    <div class="duoshuo"></div>
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="page-number" href="/archives/2017/page/3/">3</a><a class="page-number" href="/archives/2017/page/4/">4</a><a class="extend next" rel="next" href="/archives/2017/page/2/">Next &raquo;</a>
-    </nav>
-  
+
 
 
           </div>
@@ -401,8 +352,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
