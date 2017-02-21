@@ -6,14 +6,31 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/2 | 风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
+  <title>风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="border-radius怎么使用以及兼容性原生的写法设置圆角比较麻烦，自从CSS3提供了border-radius属性，设置圆角显得格外的容易，但是在测试中，你会发现，border-radius存在兼容性问题，特别是IE8以及之前的浏览器">
+<meta property="og:type" content="article">
 <meta property="og:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:url" content="http://yoursite.com/archives/2017/02/page/3/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/02/21/mySummary/20-圆角的兼容性/index.html">
 <meta property="og:site_name" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta property="og:description" content="border-radius怎么使用以及兼容性原生的写法设置圆角比较麻烦，自从CSS3提供了border-radius属性，设置圆角显得格外的容易，但是在测试中，你会发现，border-radius存在兼容性问题，特别是IE8以及之前的浏览器">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120901.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120902.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120903.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120904.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120905.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120906.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120907.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120908.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120909.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120910.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120911.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120912.png">
+<meta property="og:updated_time" content="2017-02-21T14:57:32.202Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta name="twitter:description" content="border-radius怎么使用以及兼容性原生的写法设置圆角比较麻烦，自从CSS3提供了border-radius属性，设置圆角显得格外的容易，但是在测试中，你会发现，border-radius存在兼容性问题，特别是IE8以及之前的浏览器">
+<meta name="twitter:image" content="http://image.beekka.com/blog/201012/bg2010120901.png">
   
     <link rel="alternative" href="/atom.xml" title="风吹过的，路依然远，你的故事讲到了哪，Var`Var..." type="application/atom+xml">
   
@@ -149,89 +166,187 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-mySummary/20-圆角的兼容性" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h1 id="border-radius怎么使用以及兼容性"><a href="#border-radius怎么使用以及兼容性" class="headerlink" title="border-radius怎么使用以及兼容性"></a>border-radius怎么使用以及兼容性</h1><p>原生的写法设置圆角比较麻烦，自从CSS3提供了border-radius属性，设置圆角显得格外的容易，但是在测试中，你会发现，border-radius存在兼容性问题，特别是IE8以及之前的浏览器</p>
+<hr>
+<a id="more"></a>
+<h3 id="一-圆角兼容性问题："><a href="#一-圆角兼容性问题：" class="headerlink" title="一.圆角兼容性问题："></a>一.圆角兼容性问题：</h3><blockquote>
+<p>目前而言Firefox、Opera、Chrome等主流浏览器等都已经支持border-radius的属性，唯独IE8及以前，那么怎么兼容IE8呢<br>解决的办法就是在用的border-radius属性的后面加上：behavior：url(ie-css3.htc);</p>
+</blockquote>
+<p>代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang="en"&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset="utf-8"&gt;</div><div class="line">        &lt;title&gt;border-radius兼容ie&lt;/title&gt;</div><div class="line">        &lt;style&gt;</div><div class="line">        	#btn &#123;</div><div class="line">        		display: inline-block;</div><div class="line">        		width: 20px;</div><div class="line">				height: 15px;</div><div class="line">				background: red;</div><div class="line"></div><div class="line">				/* 设置圆角 */</div><div class="line"></div><div class="line">				/* 兼容低版本的浏览器 */</div><div class="line">				-moz-border-radius: 50%;</div><div class="line">				-webkit-border-radius: 50%;</div><div class="line">				border-radius: 50%;</div><div class="line"></div><div class="line">				/* 解决IE */</div><div class="line">				behavior: url(ie-css3.htc);</div><div class="line">        	&#125;</div><div class="line">        	</div><div class="line">        &lt;/style&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">        &lt;button id="btn"&gt;点击&lt;/button&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h3 id="1-2-几大主流浏览器的私有前缀？"><a href="#1-2-几大主流浏览器的私有前缀？" class="headerlink" title="1.2 几大主流浏览器的私有前缀？"></a>1.2 几大主流浏览器的私有前缀？</h3><blockquote>
+<p>-moz- 火狐<br>-ms-  微软<br>-o-  欧朋<br>-webkit-  谷歌  </p>
+</blockquote>
+<h3 id="1-3-常见浏览器及其内核？"><a href="#1-3-常见浏览器及其内核？" class="headerlink" title="1.3 常见浏览器及其内核？"></a>1.3 常见浏览器及其内核？</h3><blockquote>
+<p>IE浏览器（遨游，世界之窗，腾讯TT…都是IE） Trident<br>FireFox火狐  Gecko<br>Opera欧朋  Presto<br>Safari苹果、Chrome谷歌  Webkit<br>Chrome 原为Webkit现为Blink<br>+++++++++++++++++++++++++++++++++<br>blink内核是由谷歌开发，chromium/chrome浏览器的内核，实际上也是由webkit衍生而来。<br>因为webkit本来是个通用内核，适合各种各样的平台，chromium只是其中一个。但webkit也有专门的团队来维护，当然由于是开源项目，google实际也是代码提供者之一。另外苹果的safari浏览器也脱自webkit内核，所以苹果在webkit方面相当有话语权。所以webkit算是多方博弈的平台。<br>随着Google chromium的理念与webkit的分歧越来越大，Google开始在webkit的基础上自立门户，第一步就是删除webkit中所有其他平台的相关代码，这也是blink内核的第一步。</p>
+</blockquote>
+<h3 id="二-使用CSS3圆角有什么好处呢？"><a href="#二-使用CSS3圆角有什么好处呢？" class="headerlink" title="二.使用CSS3圆角有什么好处呢？"></a>二.使用CSS3圆角有什么好处呢？</h3><p>传统的圆角生成方案，必须使用多张图片作为背景图案。CSS3的出现，使得我们再也不必浪费时间去制作这些图片了，而且还有其他多个优点：</p>
+<blockquote>
+<p>1.减少维护的工作量。</p>
+</blockquote>
+<p>图片文件的生成、更新、编写网页代码，这些工作都不再需要了。</p>
+<blockquote>
+<p>2.提高网页性能。</p>
+</blockquote>
+<p>由于不必再发出多余的HTTP请求，网页的载入速度将变快。</p>
+<blockquote>
+<p>3.增加视觉可靠性。</p>
+</blockquote>
+<p>某些情况下（网络拥堵、服务器出错、网速过慢等等），背景图片会下载失败，导致视觉效果不佳。CSS3就不会发生这种情况。</p>
+<h3 id="三-怎么使用border-radius属性？"><a href="#三-怎么使用border-radius属性？" class="headerlink" title="三.怎么使用border-radius属性？"></a>三.怎么使用border-radius属性？</h3><p>CSS3圆角只需设置一个属性：border-radius（含义是”边框半径”）。你为这个属性提供一个值，就能同时设置四个圆角的半径。所有合法的CSS度量值都可以使用：em、ex、pt、px、百分比等等。</p>
+<p>比如，下面是一个div方框：</p>
+<p><img src="http://image.beekka.com/blog/201012/bg2010120901.png" alt=""></p>
+<p>现在设置它的圆角半径为15px：<br>　　border-radius: 15px;</p>
+<p><img src="http://image.beekka.com/blog/201012/bg2010120902.png" alt=""></p>
+<p>这条语句同时将每个圆角的”水平半径”（horizontal radius）和”垂直半径”（vertical radius）都设置为15px。</p>
+<p><img src="http://image.beekka.com/blog/201012/bg2010120903.png" alt=""></p>
+<p>border-radius可以同时设置1到4个值。如果设置1个值，表示4个圆角都使用这个值。如果设置两个值，表示左上角和右下角使用第一个值，右上角和左下角使用第二个值。如果设置三个值，表示左上角使用第一个值，右上角和左下角使用第二个值，右下角使用第三个值。如果设置四个值，则依次对应左上角、右上角、右下角、左下角（顺时针顺序）。</p>
+<p>border-radius: 15px 5px;</p>
+<p><img src="http://image.beekka.com/blog/201012/bg2010120904.png" alt=""></p>
+<p>border-radius: 15px 5px 25px;</p>
+<p><img src="http://image.beekka.com/blog/201012/bg2010120905.png" alt=""></p>
+<p>border-radius: 15px 5px 25px 0px;</p>
+<p><img src="http://image.beekka.com/blog/201012/bg2010120906.png" alt=""></p>
+<p>（左下角的半径为0，就变成直角了。）</p>
+<p>border-radius还可以用斜杠设置第二组值。这时，第一组值表示水平半径，第二组值表示垂直半径。第二组值也可以同时设置1到4个值，应用规则与第一组值相同。<br>　<br>　border-radius: 15px 5px / 3px;</p>
+<p><img src="http://image.beekka.com/blog/201012/bg2010120907.png" alt=""></p>
+<p>border-radius: 15px 5px 25px / 3px 5px;</p>
+<p><img src="http://image.beekka.com/blog/201012/bg2010120908.png" alt=""></p>
+<p>border-radius: 15px 5px 25px 5px / 3px 5px 10px 15px;</p>
+<p><img src="http://image.beekka.com/blog/201012/bg2010120909.png" alt=""></p>
+<h3 id="四-单个圆角的设置"><a href="#四-单个圆角的设置" class="headerlink" title="四.单个圆角的设置"></a>四.单个圆角的设置</h3><p>除了同时设置四个圆角以外，还可以单独对每个角进行设置。对应四个角，CSS3提供四个单独的属性：</p>
+<blockquote>
+<p>border-top-left-radius<br> border-top-right-radius<br> border-bottom-right-radius<br> border-bottom-left-radius</p>
+</blockquote>
+<p> 这四个属性都可以同时设置1到2个值。如果设置1个值，表示水平半径与垂直半径相等。如果设置2个值，第一个值表示水平半径，第二个值表示垂直半径。</p>
+<p> border-top-left-radius: 15px;<br> <img src="http://image.beekka.com/blog/201012/bg2010120910.png" alt=""></p>
+<p> border-top-left-radius: 15px 5px;<br> <img src="http://image.beekka.com/blog/201012/bg2010120911.png" alt=""></p>
+<h3 id="五-浏览器支持情况"><a href="#五-浏览器支持情况" class="headerlink" title="五.浏览器支持情况"></a>五.浏览器支持情况</h3><p> IE 9、Opera 10.5、Safari 5、Chrome 4和Firefox 4，都支持上述的border-radius属性。早期版本的Safari和Chrome，支持-webkit-border-radius属性，早期版本的Firefox支持-moz-border-radius属性。</p>
+<p>目前来看，为了保证兼容性，只需同时设置-moz-border-radius和border-radius即可。<br>　　-moz-border-radius: 15px;<br>　　border-radius: 15px;<br><strong>（注意：border-radius必须放在最后声明，否则可能会失效。） </strong></p>
+<p>另外，早期版本Firefox的单个圆角的语句，与标准语法略有不同。<br>　　<em> -moz-border-radius-topleft（标准语法：border-top-left-radius）
+　　</em> -moz-border-radius-topright（标准语法：border-top-right-radius）<br>　　<em> -moz-border-radius-bottomleft（标准语法：border-bottom-left-radius）
+　　</em> -moz-border-radius-bottomright（标准语法：border-bottom-right-radius）</p>
+<h3 id="六-注意事项"><a href="#六-注意事项" class="headerlink" title="六.注意事项"></a>六.注意事项</h3><p>虽然各大浏览器都支持border-radius，但是在某些细节上，实现都不一样。当四个角的颜色、宽度、风格（实线框、虚线框等）、单位都相同时，所有浏览器的渲染结果基本一致；一旦四个角的设置不相同，就会出现很大的差异。比如，下面这段代码在不同的浏览器中，渲染结果就相差很大。<br>　　border-color: black;<br>　　border-style: solid dashed;<br>　　border-width: 1px 2px 3px;<br>　　border-top-color: red;<br>　　border-radius: 5%;</p>
+<p><img src="http://image.beekka.com/blog/201012/bg2010120912.png" alt=""></p>
+<p>另外，并非所有浏览器，都支持将圆角半径设为一个百分比值。<br>因此，目前最安全的做法，就是将每个圆角边框的风格和宽度，都设为一样的值，并且避免使用百分比值。</p>
+<p>++++++++++++++遇到自己理解不透彻的我就喜欢往深处钻研+++++++++++++++++++++++++++++</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/08/14-Java环境配置/" class="archive-article-date">
-  	<time datetime="2017-02-08T11:53:31.447Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-08</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/21/mySummary/20-圆角的兼容性/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/06/13-react入门/" class="archive-article-date">
-  	<time datetime="2017-02-06T12:16:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-06</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/12-Linux常用的命令/" class="archive-article-date">
-  	<time datetime="2017-02-03T10:02:34.212Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+  
+    <a href="/2017/02/20/mySummary/19-web安全/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
+
+
+
+
   
-  
-    </div></section>
+    <div class="duoshuo"></div>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2017/02/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/2017/02/">1</a><a class="page-number" href="/archives/2017/02/page/2/">2</a><span class="page-number current">3</span>
-    </nav>
-  
+
 
 
           </div>
@@ -254,8 +369,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
