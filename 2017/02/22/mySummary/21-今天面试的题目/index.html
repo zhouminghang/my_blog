@@ -8,29 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="border-radius怎么使用以及兼容性原生的写法设置圆角比较麻烦，自从CSS3提供了border-radius属性，设置圆角显得格外的容易，但是在测试中，你会发现，border-radius存在兼容性问题，特别是IE8以及之前的浏览器">
+  <meta name="description" content="今天去一家公司面试，分享一下面试中问道的题目和知识总结吃一堑长一智，尽力总会有收获">
 <meta property="og:type" content="article">
 <meta property="og:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:url" content="http://yoursite.com/2017/02/21/mySummary/20-圆角的兼容性/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/02/22/mySummary/21-今天面试的题目/index.html">
 <meta property="og:site_name" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:description" content="border-radius怎么使用以及兼容性原生的写法设置圆角比较麻烦，自从CSS3提供了border-radius属性，设置圆角显得格外的容易，但是在测试中，你会发现，border-radius存在兼容性问题，特别是IE8以及之前的浏览器">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120901.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120902.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120903.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120904.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120905.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120906.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120907.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120908.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120909.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120910.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120911.png">
-<meta property="og:image" content="http://image.beekka.com/blog/201012/bg2010120912.png">
-<meta property="og:updated_time" content="2017-02-21T14:57:32.202Z">
+<meta property="og:description" content="今天去一家公司面试，分享一下面试中问道的题目和知识总结吃一堑长一智，尽力总会有收获">
+<meta property="og:updated_time" content="2017-02-22T17:01:13.471Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta name="twitter:description" content="border-radius怎么使用以及兼容性原生的写法设置圆角比较麻烦，自从CSS3提供了border-radius属性，设置圆角显得格外的容易，但是在测试中，你会发现，border-radius存在兼容性问题，特别是IE8以及之前的浏览器">
-<meta name="twitter:image" content="http://image.beekka.com/blog/201012/bg2010120901.png">
+<meta name="twitter:description" content="今天去一家公司面试，分享一下面试中问道的题目和知识总结吃一堑长一智，尽力总会有收获">
   
     <link rel="alternative" href="/atom.xml" title="风吹过的，路依然远，你的故事讲到了哪，Var`Var..." type="application/atom+xml">
   
@@ -166,76 +153,110 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-mySummary/20-圆角的兼容性" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-mySummary/21-今天面试的题目" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h1 id="border-radius怎么使用以及兼容性"><a href="#border-radius怎么使用以及兼容性" class="headerlink" title="border-radius怎么使用以及兼容性"></a>border-radius怎么使用以及兼容性</h1><p>原生的写法设置圆角比较麻烦，自从CSS3提供了border-radius属性，设置圆角显得格外的容易，但是在测试中，你会发现，border-radius存在兼容性问题，特别是IE8以及之前的浏览器</p>
-<hr>
-<a id="more"></a>
-<h3 id="一-圆角兼容性问题："><a href="#一-圆角兼容性问题：" class="headerlink" title="一.圆角兼容性问题："></a>一.圆角兼容性问题：</h3><blockquote>
-<p>目前而言Firefox、Opera、Chrome等主流浏览器等都已经支持border-radius的属性，唯独IE8及以前，那么怎么兼容IE8呢<br>解决的办法就是在用的border-radius属性的后面加上：behavior：url(ie-css3.htc);</p>
-</blockquote>
-<p>代码如下：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang="en"&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset="utf-8"&gt;</div><div class="line">        &lt;title&gt;border-radius兼容ie&lt;/title&gt;</div><div class="line">        &lt;style&gt;</div><div class="line">        	#btn &#123;</div><div class="line">        		display: inline-block;</div><div class="line">        		width: 20px;</div><div class="line">				height: 15px;</div><div class="line">				background: red;</div><div class="line"></div><div class="line">				/* 设置圆角 */</div><div class="line"></div><div class="line">				/* 兼容低版本的浏览器 */</div><div class="line">				-moz-border-radius: 50%;</div><div class="line">				-webkit-border-radius: 50%;</div><div class="line">				border-radius: 50%;</div><div class="line"></div><div class="line">				/* 解决IE */</div><div class="line">				behavior: url(ie-css3.htc);</div><div class="line">        	&#125;</div><div class="line">        	</div><div class="line">        &lt;/style&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line">    &lt;body&gt;</div><div class="line">        &lt;button id="btn"&gt;点击&lt;/button&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-<h3 id="1-2-几大主流浏览器的私有前缀？"><a href="#1-2-几大主流浏览器的私有前缀？" class="headerlink" title="1.2 几大主流浏览器的私有前缀？"></a>1.2 几大主流浏览器的私有前缀？</h3><blockquote>
-<p>-moz- 火狐<br>-ms-  微软<br>-o-  欧朋<br>-webkit-  谷歌  </p>
-</blockquote>
-<h3 id="1-3-常见浏览器及其内核？"><a href="#1-3-常见浏览器及其内核？" class="headerlink" title="1.3 常见浏览器及其内核？"></a>1.3 常见浏览器及其内核？</h3><blockquote>
-<p>IE浏览器（遨游，世界之窗，腾讯TT…都是IE） Trident<br>FireFox火狐  Gecko<br>Opera欧朋  Presto<br>Safari苹果、Chrome谷歌  Webkit<br>Chrome 原为Webkit现为Blink<br>+++++++++++++++++++++++++++++++++<br>blink内核是由谷歌开发，chromium/chrome浏览器的内核，实际上也是由webkit衍生而来。<br>因为webkit本来是个通用内核，适合各种各样的平台，chromium只是其中一个。但webkit也有专门的团队来维护，当然由于是开源项目，google实际也是代码提供者之一。另外苹果的safari浏览器也脱自webkit内核，所以苹果在webkit方面相当有话语权。所以webkit算是多方博弈的平台。<br>随着Google chromium的理念与webkit的分歧越来越大，Google开始在webkit的基础上自立门户，第一步就是删除webkit中所有其他平台的相关代码，这也是blink内核的第一步。</p>
-</blockquote>
-<h3 id="二-使用CSS3圆角有什么好处呢？"><a href="#二-使用CSS3圆角有什么好处呢？" class="headerlink" title="二.使用CSS3圆角有什么好处呢？"></a>二.使用CSS3圆角有什么好处呢？</h3><p>传统的圆角生成方案，必须使用多张图片作为背景图案。CSS3的出现，使得我们再也不必浪费时间去制作这些图片了，而且还有其他多个优点：</p>
+<h1 id="今天去一家公司面试，分享一下面试中问道的题目和知识总结"><a href="#今天去一家公司面试，分享一下面试中问道的题目和知识总结" class="headerlink" title="今天去一家公司面试，分享一下面试中问道的题目和知识总结"></a>今天去一家公司面试，分享一下面试中问道的题目和知识总结</h1><h2 id="吃一堑长一智，尽力总会有收获"><a href="#吃一堑长一智，尽力总会有收获" class="headerlink" title="吃一堑长一智，尽力总会有收获"></a>吃一堑长一智，尽力总会有收获</h2><a id="more"></a>
+<h3 id="一-首先就是-自我介绍-？"><a href="#一-首先就是-自我介绍-？" class="headerlink" title="一.首先就是 自我介绍  ？"></a>一.首先就是<strong> 自我介绍 </strong> ？</h3><p>自我介绍根据自己的情况说吧，就当是在聊天，放松心情，此处省略一百字</p>
+<h3 id="二-面试的问题？"><a href="#二-面试的问题？" class="headerlink" title="二.面试的问题？"></a>二.面试的问题？</h3><h4 id="1-讲讲数据库中的左联、右联和内联？"><a href="#1-讲讲数据库中的左联、右联和内联？" class="headerlink" title="1.讲讲数据库中的左联、右联和内联？"></a>1.讲讲数据库中的左联、右联和内联？</h4><p>没错第一个问题我就懵了，当时听成了讲讲内联元素的特点，当时我差点就把块，内连，空标签讲出来，后来我才发现我讲错了，也是我简历上写的大二学习过数据库，好多都忘了，能记住一些基本的sql语句，实现增删改查功能，走的时候我换特意问了问面试官这道题，面试官说这是最简单最基础的数据库知识，当时我就想玩完了，然后他给我讲从左侧连接表，看有没有对应的，从右侧怎么怎么滴，又说内联设置id什么的，我在想这不是设置主键连表查询么…</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div></pre></td><td class="code"><pre><div class="line">MySQL联合查询效率较高，以下例子来说明联合查询（内联、左联、右联、全联）的好处：</div><div class="line"></div><div class="line"></div><div class="line">T1表结构（用户名,密码）   </div><div class="line">userid（int）   usernamevarchar（<span class="number">20</span>）   passwordvarchar（<span class="number">20</span>）   </div><div class="line"><span class="number">1</span>   jack  jackpwd   </div><div class="line"><span class="number">2</span>   owen  owenpwd   </div><div class="line"></div><div class="line"></div><div class="line">T2表结构（用户名,密码）   </div><div class="line">userid（int）   jifenvarchar（<span class="number">20</span>）   dengjivarchar（<span class="number">20</span>）   </div><div class="line">    <span class="number">1</span>   <span class="number">20</span>   <span class="number">3</span>   </div><div class="line">    <span class="number">3</span>   <span class="number">50</span>   <span class="number">6</span>   </div><div class="line"></div><div class="line"></div><div class="line">第一：内联（inner join）</div><div class="line">如果想把用户信息、积分、等级都列出来，那么一般会这样写：</div><div class="line"></div><div class="line">select * <span class="keyword">from</span> T1, T3 where T1.userid = T3.userid</div><div class="line">（其实这样的结果等同于select * <span class="keyword">from</span> T1 inner join T3 on T1.userid=T3.userid ）。</div><div class="line"></div><div class="line">把两个表中都存在userid的行拼成一行（即内联），但后者的效率会比前者高很多，建议用后者（内联）的写法。</div><div class="line"></div><div class="line">SQL语句：</div><div class="line">select * <span class="keyword">from</span> T1 inner join T2 on T1.userid = T2.userid</div><div class="line"></div><div class="line">运行结果   </div><div class="line">T1.userid   username   password   T2.userid   jifen   dengji   </div><div class="line"><span class="number">1</span>   jack   jackpwd   <span class="number">1</span>   <span class="number">20</span>   <span class="number">3</span>   </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">第二：左联（left outer join）</div><div class="line">显示左表T1中的所有行，并把右表T2中符合条件加到左表T1中；</div><div class="line">右表T2中不符合条件，就不用加入结果表中，并且NULL表示。</div><div class="line"></div><div class="line">SQL语句：</div><div class="line">select * <span class="keyword">from</span> T1 left outer join T2 on T1.userid = T2.userid</div><div class="line"></div><div class="line">运行结果   </div><div class="line">T1.userid   username   password   T2.userid   jifen   dengji   </div><div class="line"><span class="number">1</span>   jack   jackpwd   <span class="number">1</span>   <span class="number">20</span>   <span class="number">3</span>   </div><div class="line"><span class="number">2</span>   owen   owenpwd   NULL   NULL   NULL   </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">第三：右联（right outer join）。</div><div class="line">显示右表T2中的所有行，并把左表T1中符合条件加到右表T2中；</div><div class="line">左表T1中不符合条件，就不用加入结果表中，并且NULL表示。</div><div class="line"></div><div class="line">SQL语句：</div><div class="line">select * <span class="keyword">from</span> T1 right outer join T2 on T1.userid = T2.userid</div><div class="line"></div><div class="line">运行结果   </div><div class="line">T1.userid   username   password   T2.userid   jifen   dengji   </div><div class="line"><span class="number">1</span>   jack   jackpwd   <span class="number">1</span>   <span class="number">20</span>   <span class="number">3</span>   </div><div class="line">NULL   NULL   NULL   <span class="number">3</span>   <span class="number">50</span>   <span class="number">6</span>   </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">第四：全联（full outer join）</div><div class="line">显示左表T1、右表T2两边中的所有行，即把左联结果表 + 右联结果表组合在一起，然后过滤掉重复的。</div><div class="line"></div><div class="line">SQL语句：</div><div class="line">select * <span class="keyword">from</span> T1 full outer join T2 on T1.userid = T2.userid</div><div class="line"> </div><div class="line">运行结果   </div><div class="line">T1.userid   username   password   T2.userid   jifen   dengji   </div><div class="line"><span class="number">1</span>   jack   jackpwd   <span class="number">1</span>   <span class="number">20</span>   <span class="number">3</span>   </div><div class="line"><span class="number">2</span>   owen   owenpwd   NULL   NULL   NULL   </div><div class="line">NULL   NULL   NULL   <span class="number">3</span>   <span class="number">50</span>   <span class="number">6</span>   </div><div class="line"></div><div class="line">总结，关于联合查询，效率的确比较高，<span class="number">4</span>种联合方式如果可以灵活使用，基本上复杂的语句结构也会简单起来。</div></pre></td></tr></table></figure>
+<h4 id="2-get和post的区别？"><a href="#2-get和post的区别？" class="headerlink" title="2.get和post的区别？"></a>2.get和post的区别？</h4><p>回答问题一定要思路清晰，尽量列举，通过对比更能区别两者之间的区别，可以从大小、方式、安全性、使用场景、实现原理等几方面进行发散性思维,最后在讲各自的优缺点就OK了。</p>
+<p>如果还想扩展一下，可以扯扯Ajax中get与post的不同，比如Ajax中的get请求会存在缓存问题，也不安全，怎么解决，就给它传递一个获取系统当前时间的函数，让它自动刷新，从而实现清除缓存的问题，而post请求就不会存在这个问题，而且在发送请求的时候get不需要传递一个参数，post需要传递参数；</p>
+<p>换可以扩展一下http中的get与post的区别，顺便可以讲讲谷歌浏览器的扩展插件postman，比如之前做的电影项目，就是使用postman进行豆瓣API接口的数据请求</p>
 <blockquote>
-<p>1.减少维护的工作量。</p>
+<p>1、get是从服务器上获取数据，post是向服务器传送数据。<br>2、 get是把参数数据队列加到提交表单的ACTION属性所指的URL中，值和表单内各个字段一一对应，在URL中可以看到。post是通过HTTP post机制，将表单内各个字段与其内容放置在HTML HEADER内一起传送到ACTION属性所指的URL地址。用户看不到这个过程。<br>3、对于get方式，服务器端用Request.QueryString获取变量的值，对于post方式，服务器端用Request.Form获取提交的数据。<br>4、 get传送的数据量较小，不能大于2KB。post传送的数据量较大，一般被默认为不受限制。但理论上，IIS4中最大量为80KB，IIS5中为100KB。<br>5、 get安全性非常低，post安全性较高。但是执行效率却比Post方法好。 </p>
 </blockquote>
-<p>图片文件的生成、更新、编写网页代码，这些工作都不再需要了。</p>
+<p>建议：</p>
 <blockquote>
-<p>2.提高网页性能。</p>
+<p>1、get方式的安全性较Post方式要差些，包含机密信息的话，建议用Post数据提交方式；<br>2、在做数据查询时，建议用Get方式；而在做数据添加、修改或删除时，建议用Post方式；</p>
 </blockquote>
-<p>由于不必再发出多余的HTTP请求，网页的载入速度将变快。</p>
+<h3 id="3-JQuery中的动画"><a href="#3-JQuery中的动画" class="headerlink" title="3.JQuery中的动画"></a>3.JQuery中的动画</h3><p>这个我当时也比较懵，就讲了一个show()和hide()方法实现一个动态三级菜单的伸缩功能，其实JQ动画说白了就是JQuery封装好了的各种方法，我们可以直接调用。</p>
+<p>说到动画我首先想到的就是CSS3中的自定义动画，使用@keyfrom定义一个动画名，使用新增的平移、翻转等等属性实现动画效果，就像前期模仿广东旅游局首页的动画一样，只不过人家做的更加细腻。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">animate()    <span class="comment">//对被选元素应用“自定义”的动画    </span></div><div class="line">clearQueue()    <span class="comment">//对被选元素移除所有排队的函数（仍未运行的）    </span></div><div class="line">delay()    <span class="comment">//对被选元素的所有排队函数（仍未运行）设置延迟    </span></div><div class="line">dequeue()    <span class="comment">//运行被选元素的下一个排队函数    </span></div><div class="line">fadeIn()    <span class="comment">//逐渐改变被选元素的不透明度，从隐藏到可见    </span></div><div class="line">fadeOut()    <span class="comment">//逐渐改变被选元素的不透明度，从可见到隐藏    </span></div><div class="line">fadeTo()    <span class="comment">//把被选元素逐渐改变至给定的不透明度    </span></div><div class="line">hide()    <span class="comment">//隐藏被选的元素    </span></div><div class="line">queue()    <span class="comment">//显示被选元素的排队函数    </span></div><div class="line">show()    <span class="comment">//显示被选的元素    </span></div><div class="line">slideDown()    <span class="comment">//通过调整高度来滑动显示被选元素    </span></div><div class="line">slideToggle()    <span class="comment">//对被选元素进行滑动隐藏和滑动显示的切换    </span></div><div class="line">slideUp()    <span class="comment">//通过调整高度来滑动隐藏被选元素    </span></div><div class="line">stop()    <span class="comment">//停止在被选元素上运行动画    </span></div><div class="line">toggle()    <span class="comment">//对被选元素进行隐藏和显示的切换</span></div></pre></td></tr></table></figure>
+<h3 id="4-不使用js怎么实现动画？"><a href="#4-不使用js怎么实现动画？" class="headerlink" title="4.不使用js怎么实现动画？"></a>4.不使用js怎么实现动画？</h3><p>那就使用CSS3、Canvas、Svg、</p>
+<h3 id="5-怎么理解闭包？"><a href="#5-怎么理解闭包？" class="headerlink" title="5.怎么理解闭包？"></a>5.怎么理解闭包？</h3><p>这个我就凭自己的印象说了，关于闭包的官方定义我记得不太清楚，反正官方定义的概念太过绕弯子，也不好理解</p>
+<p>首先我就说说我总结的闭包的三大特证：</p>
 <blockquote>
-<p>3.增加视觉可靠性。</p>
+<p>1、函数嵌套函数<br>  2、内部函数可以访问外部变量，但外部不能所访问内部变量<br>  3、某个变量长期的贮存在内存中</p>
 </blockquote>
-<p>某些情况下（网络拥堵、服务器出错、网速过慢等等），背景图片会下载失败，导致视觉效果不佳。CSS3就不会发生这种情况。</p>
-<h3 id="三-怎么使用border-radius属性？"><a href="#三-怎么使用border-radius属性？" class="headerlink" title="三.怎么使用border-radius属性？"></a>三.怎么使用border-radius属性？</h3><p>CSS3圆角只需设置一个属性：border-radius（含义是”边框半径”）。你为这个属性提供一个值，就能同时设置四个圆角的半径。所有合法的CSS度量值都可以使用：em、ex、pt、px、百分比等等。</p>
-<p>比如，下面是一个div方框：</p>
-<p><img src="http://image.beekka.com/blog/201012/bg2010120901.png" alt=""></p>
-<p>现在设置它的圆角半径为15px：<br>　　border-radius: 15px;</p>
-<p><img src="http://image.beekka.com/blog/201012/bg2010120902.png" alt=""></p>
-<p>这条语句同时将每个圆角的”水平半径”（horizontal radius）和”垂直半径”（vertical radius）都设置为15px。</p>
-<p><img src="http://image.beekka.com/blog/201012/bg2010120903.png" alt=""></p>
-<p>border-radius可以同时设置1到4个值。如果设置1个值，表示4个圆角都使用这个值。如果设置两个值，表示左上角和右下角使用第一个值，右上角和左下角使用第二个值。如果设置三个值，表示左上角使用第一个值，右上角和左下角使用第二个值，右下角使用第三个值。如果设置四个值，则依次对应左上角、右上角、右下角、左下角（顺时针顺序）。</p>
-<p>border-radius: 15px 5px;</p>
-<p><img src="http://image.beekka.com/blog/201012/bg2010120904.png" alt=""></p>
-<p>border-radius: 15px 5px 25px;</p>
-<p><img src="http://image.beekka.com/blog/201012/bg2010120905.png" alt=""></p>
-<p>border-radius: 15px 5px 25px 0px;</p>
-<p><img src="http://image.beekka.com/blog/201012/bg2010120906.png" alt=""></p>
-<p>（左下角的半径为0，就变成直角了。）</p>
-<p>border-radius还可以用斜杠设置第二组值。这时，第一组值表示水平半径，第二组值表示垂直半径。第二组值也可以同时设置1到4个值，应用规则与第一组值相同。<br>　<br>　border-radius: 15px 5px / 3px;</p>
-<p><img src="http://image.beekka.com/blog/201012/bg2010120907.png" alt=""></p>
-<p>border-radius: 15px 5px 25px / 3px 5px;</p>
-<p><img src="http://image.beekka.com/blog/201012/bg2010120908.png" alt=""></p>
-<p>border-radius: 15px 5px 25px 5px / 3px 5px 10px 15px;</p>
-<p><img src="http://image.beekka.com/blog/201012/bg2010120909.png" alt=""></p>
-<h3 id="四-单个圆角的设置"><a href="#四-单个圆角的设置" class="headerlink" title="四.单个圆角的设置"></a>四.单个圆角的设置</h3><p>除了同时设置四个圆角以外，还可以单独对每个角进行设置。对应四个角，CSS3提供四个单独的属性：</p>
+<p>接下来就巴拉巴拉闭包的好处，可以有效防止变量污染等等；</p>
+<p>再说闭包的使用场景，适用于for循环中，具体讲个小demo，比如列表的点击事件弹出相应的索引值;</p>
+<p>当然有利必有弊，因为闭包会让某个变量长期贮存再内存中，势必会造成内存的浪费，对于性能肯定有影响，所以要慎用闭包，这样你可以顺便扯扯JavaScript中的垃圾回收机制，甚至可以扯到前端优化这个大的方向，关于前端优化可以自行度娘，大致也就这几方面，比如图片优化，渲染优化，代码优化，css优化，脚本优化，加载优化等等</p>
+<h3 id="6-变量的作用域？"><a href="#6-变量的作用域？" class="headerlink" title="6.变量的作用域？"></a>6.变量的作用域？</h3><p>我就说了在ES5之前，变量分为局部变量、全局变量。</p>
 <blockquote>
-<p>border-top-left-radius<br> border-top-right-radius<br> border-bottom-right-radius<br> border-bottom-left-radius</p>
+<p>局部变量就是定义在函数内部的变量，外部无权访问内部的变量；<br>全局变量就是定义在最外层的变量，或者是定义在函数内部的变量但没有使用var来定义</p>
 </blockquote>
-<p> 这四个属性都可以同时设置1到2个值。如果设置1个值，表示水平半径与垂直半径相等。如果设置2个值，第一个值表示水平半径，第二个值表示垂直半径。</p>
-<p> border-top-left-radius: 15px;<br> <img src="http://image.beekka.com/blog/201012/bg2010120910.png" alt=""></p>
-<p> border-top-left-radius: 15px 5px;<br> <img src="http://image.beekka.com/blog/201012/bg2010120911.png" alt=""></p>
-<h3 id="五-浏览器支持情况"><a href="#五-浏览器支持情况" class="headerlink" title="五.浏览器支持情况"></a>五.浏览器支持情况</h3><p> IE 9、Opera 10.5、Safari 5、Chrome 4和Firefox 4，都支持上述的border-radius属性。早期版本的Safari和Chrome，支持-webkit-border-radius属性，早期版本的Firefox支持-moz-border-radius属性。</p>
-<p>目前来看，为了保证兼容性，只需同时设置-moz-border-radius和border-radius即可。<br>　　-moz-border-radius: 15px;<br>　　border-radius: 15px;<br><strong>（注意：border-radius必须放在最后声明，否则可能会失效。） </strong></p>
-<p>另外，早期版本Firefox的单个圆角的语句，与标准语法略有不同。<br>　　<em> -moz-border-radius-topleft（标准语法：border-top-left-radius）
-　　</em> -moz-border-radius-topright（标准语法：border-top-right-radius）<br>　　<em> -moz-border-radius-bottomleft（标准语法：border-bottom-left-radius）
-　　</em> -moz-border-radius-bottomright（标准语法：border-bottom-right-radius）</p>
-<h3 id="六-注意事项"><a href="#六-注意事项" class="headerlink" title="六.注意事项"></a>六.注意事项</h3><p>虽然各大浏览器都支持border-radius，但是在某些细节上，实现都不一样。当四个角的颜色、宽度、风格（实线框、虚线框等）、单位都相同时，所有浏览器的渲染结果基本一致；一旦四个角的设置不相同，就会出现很大的差异。比如，下面这段代码在不同的浏览器中，渲染结果就相差很大。<br>　　border-color: black;<br>　　border-style: solid dashed;<br>　　border-width: 1px 2px 3px;<br>　　border-top-color: red;<br>　　border-radius: 5%;</p>
-<p><img src="http://image.beekka.com/blog/201012/bg2010120912.png" alt=""></p>
-<p>另外，并非所有浏览器，都支持将圆角半径设为一个百分比值。<br>因此，目前最安全的做法，就是将每个圆角边框的风格和宽度，都设为一样的值，并且避免使用百分比值。</p>
-<p>++++++++++++++遇到自己理解不透彻的我就喜欢往深处钻研+++++++++++++++++++++++++++++</p>
+<p>顺便就说说关于变量的提升，只声明不赋值…</p>
+<p>关于作用域还说了ES5中没有块级作用域，在ES6中可以使用let定义一个块级作用域，比如之前的for循环把var改成let；使用const定义一个常量等等</p>
+<h3 id="7-ES5与ES6的区别？"><a href="#7-ES5与ES6的区别？" class="headerlink" title="7.ES5与ES6的区别？"></a>7.ES5与ES6的区别？</h3><p>这个方向比较大啊，当时没有一点头绪，不知道该从哪方面开始说起，于是乎：我就开始扯了！</p>
+<p>先扯了ES5中JavaScript中的五种基本数据类型和一种引用类型，顺便扯了扯两种数据类型一个存放在栈内存一个存放在堆内存中，举了一个小demo讲了讲堆与栈的区别，有点后悔之前学c的时候没好好看指针，讲了讲ES6新增的Symbol数据类型，扯扯位运算；</p>
+<p>接着扯ES5之前没有块级作用域，JavaScript中没有函数重载，就是在同一作用域下，同时定义两个相同名称的函数，在调用的时候传递不同个数的参数就会报错，浏览器不知道到底要解析并执行哪个函数，但可以调用函数的arguments对象，来模拟一个伪数组，通过arguments.length获取参数的个数，通过下标可以获取具体的参数，来模拟函数的重载；ES6可使用let、const定义块级作用域</p>
+<p>接着在扯ES6中的箭头函数，以及后期开发基于ES6写法的新框架，其他的我也记不太清楚了，就坦白，尴尬的笑笑，面试官也挺和蔼的，碰到我不会的也没说什么，就说想不起来也没关系</p>
+<p>关于这个问题还是靠自己去总结，多使用使用就能孰能生巧，真要讲起来半个小时也喷不完，答案自己百度或知乎，关于前端新事物的产生自有其产生的原因，多使用，不懂的话可以先看看别人的理解，别人的看法，这样会理解起来更加容易</p>
+<h3 id="8-讲讲AngularJs的第三方插件路由？"><a href="#8-讲讲AngularJs的第三方插件路由？" class="headerlink" title="8.讲讲AngularJs的第三方插件路由？"></a>8.讲讲AngularJs的第三方插件路由？</h3><p>首先我说了AngularJs的自带路由ng-route，讲讲具体的配置，然后开始说第三方插件路由ui-router，讲ui-router的强大之处就是可以实现路由的深层嵌套，而自带路由不行，还有就是使用npm或者bower下载安装，导入模块的时候两者的区别等等</p>
+<p>这是我之前总结的两者之间的区别：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">区别</th>
+<th style="text-align:center">ng-router</th>
+<th style="text-align:center">ui-router</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">名称</td>
+<td style="text-align:center">ng自带路由</td>
+<td style="text-align:center">第三方路由</td>
+</tr>
+<tr>
+<td style="text-align:center">功能</td>
+<td style="text-align:center">能力有限，不能嵌套路由</td>
+<td style="text-align:center">非常强大，可以循环嵌套路由，实现路由的深层嵌套</td>
+</tr>
+<tr>
+<td style="text-align:center">下载安装</td>
+<td style="text-align:center">bower install –save-dev angular-router @x.y.z(版本号，不写默认最新版本)</td>
+<td style="text-align:center">bower install –save-dev angular-ui-route</td>
+</tr>
+<tr>
+<td style="text-align:center">引入的库</td>
+<td style="text-align:center">angular-route.min.js</td>
+<td style="text-align:center">angular-ui-router.min.js</td>
+</tr>
+<tr>
+<td style="text-align:center">占坑标签</td>
+<td style="text-align:center"><code>&lt;div ng-view&gt;&lt;/div&gt;</code></td>
+<td style="text-align:center"><code>&lt;div ui-view&gt;&lt;/div&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">单页面标签</td>
+<td style="text-align:center">需要加ng-controller=””</td>
+<td style="text-align:center">不需要加ng-controller=””</td>
+</tr>
+<tr>
+<td style="text-align:center">注入依赖模块</td>
+<td style="text-align:center">[“ngRoute”]</td>
+<td style="text-align:center">[“ui.router”]</td>
+</tr>
+<tr>
+<td style="text-align:center">相同点</td>
+<td style="text-align:center">都依赖angularjs库，引到ng后，做单页面应用的时候存在跨域，需要开启服务器</td>
+</tr>
+</tbody>
+</table>
+<h3 id="9-讲讲MVVM"><a href="#9-讲讲MVVM" class="headerlink" title="9.讲讲MVVM"></a>9.讲讲MVVM</h3><p>虽然之前看过阮一峰老师对MVVM的讲解，但我还是不太理解这个被神化了的MVVM</p>
+<p>我就说了首先它是一种开发思想，和MVC开发思想大致一样，M是Model层，主要是模板层;V是View层，即视图层，用户可以直观看到的页面;C是Controller层，控制器层主要用来调度Model层和View层，VM是View-Model层，其实和Controller是一样的；接下来扯扯怎么进行数据的双向绑定，$scope上挂载一些变量，加入到事件队列中，通过脏检查不停的循环检测，当View层数据发生变化就即使更新到Model层的数据库中，当Model层发生变化就即时响应到视图中去</p>
+<h3 id="10-问有没有了解过后端，以后准备前后端结合还是纯前端开发？"><a href="#10-问有没有了解过后端，以后准备前后端结合还是纯前端开发？" class="headerlink" title="10.问有没有了解过后端，以后准备前后端结合还是纯前端开发？"></a>10.问有没有了解过后端，以后准备前后端结合还是纯前端开发？</h3><p>我说前端这个行业的未来发展趋势更加倾向于前后端结合，作为一名优秀的前端开发人员，前端是自己的本职，但后端也需要了解，这样才能更好发展。</p>
+<p>关于后端就使用过NodeJs，也就是写一个接口的…..</p>
+<h3 id="11-刚开始问了问我的职业规划，到结束的时候又问我行业的规划？"><a href="#11-刚开始问了问我的职业规划，到结束的时候又问我行业的规划？" class="headerlink" title="11.刚开始问了问我的职业规划，到结束的时候又问我行业的规划？"></a>11.刚开始问了问我的职业规划，到结束的时候又问我行业的规划？</h3><p>关于职业规划，就讲讲我的近期目标，长期目标，三年目标，五年计划说了一大堆，真的是一个人一定要给自己一个明确的目标，不然会很累的。</p>
+<p>关于行业，我想应该说的是前端的未来发展趋势，工程化，自动化，模块化….</p>
+<p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+<p>上面有些问题答案不是很全面，有的可能存在错误，大家可以给我发邮件353389497@qq.com，就当交流吧，今天就写这么多了，不知不觉已经是2017-2-23-1：00，又是一个凌晨的夜晚，洗洗睡啦</p>
+<p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
 
       
 
@@ -315,7 +336,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/21/mySummary/20-圆角的兼容性/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/22/mySummary/21-今天面试的题目/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -329,17 +350,8 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/02/22/mySummary/21-今天面试的题目/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/02/20/mySummary/19-web安全/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/02/21/mySummary/20-圆角的兼容性/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
