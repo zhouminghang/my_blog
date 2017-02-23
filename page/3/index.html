@@ -151,6 +151,161 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-mySummary/03-行内、块、空元素的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="谈谈我对-行内元素-块级元素-空元素-的区别的认识"><a href="#谈谈我对-行内元素-块级元素-空元素-的区别的认识" class="headerlink" title="谈谈我对 行内元素/块级元素/空元素 的区别的认识"></a>谈谈我对 行内元素/块级元素/空元素 的区别的认识</h1><p>之前一直很熟悉 行内元素、块级元素，后来听说竟然还有空元素一说，于是就赶紧总结一下，增长一下见识</p>
+<h2 id="先说说行内元素"><a href="#先说说行内元素" class="headerlink" title="先说说行内元素"></a>先说说行内元素</h2><p>行内元素又叫内联元素或者行内标签 </p>
+<h3 id="它的特点有"><a href="#它的特点有" class="headerlink" title="它的特点有"></a>它的特点有</h3><ul>
+<li>设置宽高无效，只能由内容撑起来，即行内元素设置width,height属性无效.</li>
+<li>行内元素不会独占一行,相邻的行内元素会排列在同一行里,直到一行排不下,才会换行,其宽度随元素的内容而变化. </li>
+<li>设置上下margin无效，左右margin有效</li>
+<li>设置上下padding无效，左右padding有效</li>
+<li>行内元素的margin和padding属性,水平方向的padding-left,padding-right,margin-left,margin-right都产生边距效果,但竖直方向的padding-top,padding-bottom,margin-top,margin-bottom却不会产生边距效果.</li>
+<li>行内元素对应于display:inline<h3 id="常见的行内元素有："><a href="#常见的行内元素有：" class="headerlink" title="常见的行内元素有："></a>常见的行内元素有：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">span、em、i、b、strong、a、img、input、br、select、textarea、q、bdo、sub、sup...等等</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h2><p>块级元素又叫块级标签</p>
+<h3 id="它的特点有-1"><a href="#它的特点有-1" class="headerlink" title="它的特点有"></a>它的特点有</h3><ul>
+<li>能够设置宽高，即块级元素可以设置width,height属性. </li>
+<li>块级元素会独占一行,默认情况下,其宽度自动填满其父元素宽度. </li>
+<li>块级元素即使设置了宽度,仍然是独占一行</li>
+<li>块级元素可以设置margin和padding属性，即上下左右margin有效，上下左右padding有效</li>
+<li>块级元素对应于display:block<h3 id="常见的块级元素有："><a href="#常见的块级元素有：" class="headerlink" title="常见的块级元素有："></a>常见的块级元素有：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">div、p、h1~h6、</div><div class="line">ul、ol、li、</div><div class="line">dl、dt、dd、</div><div class="line">form、table、hr、</div><div class="line">blockquote <span class="comment">// 浏览器以缩进方式显示被引用的文本，通常定义一段长的文本引用、</span></div><div class="line">address、menu、pre.....等等</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="空元素"><a href="#空元素" class="headerlink" title="空元素"></a>空元素</h2><p>这个我之前不了解，但了解了特性就很简单了，大家都看一看记住就行了</p>
+<h3 id="什么是-空元素？"><a href="#什么是-空元素？" class="headerlink" title="什么是 空元素？"></a>什么是 空元素？</h3><ul>
+<li>没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的。<br><br> 就是没有关闭标签的空元素（<br> 标签定义换行）。<br>在 XHTML、XML 以及未来版本的 HTML 中，所有元素都必须被关闭。</li>
+<li>由于HTML元素的内容是开始标签与结束标签之间的内容。而某些 HTML 元素具有空内容。那些含有空内容的HTML元素，就是空元素。</li>
+<li>简单的说就是：没有 HTML 内容的元素被称为空元素。空元素是在开始标签中关闭的。</li>
+</ul>
+<h3 id="空元素最显著的特点？"><a href="#空元素最显著的特点？" class="headerlink" title="空元素最显著的特点？"></a>空元素最显著的特点？</h3><ul>
+<li>没有HTML内容</li>
+<li>单标签，只有开始标签，没有结束标签</li>
+</ul>
+<h3 id="常见的空元素有哪些？"><a href="#常见的空元素有哪些？" class="headerlink" title="常见的空元素有哪些？"></a>常见的空元素有哪些？</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;br&gt; <span class="comment">//换行 </span></div><div class="line">&lt;input&gt; <span class="comment">//文本框等</span></div><div class="line">&lt;img&gt;  <span class="comment">//图片</span></div><div class="line">&lt;hr&gt;  <span class="comment">//分割线</span></div><div class="line">...等等</div></pre></td></tr></table></figure>
+<h3 id="空标签注意的地方？"><a href="#空标签注意的地方？" class="headerlink" title="空标签注意的地方？"></a>空标签注意的地方？</h3><p><br> 就是没有关闭标签的空元素（<br> 标签定义换行）。<br>在开始标签中添加斜杠，比如 <br>，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。<br>即使 <br> 在所有浏览器中都是有效的，但使用 <br> 其实是更长远的保障。</p>
+<h2 id="HTML-元素语法"><a href="#HTML-元素语法" class="headerlink" title="HTML 元素语法"></a>HTML 元素语法</h2><ul>
+<li>HTML 元素以开始标签起始</li>
+<li>HTML 元素以结束标签终止</li>
+<li>元素的内容是开始标签与结束标签之间的内容</li>
+<li>某些 HTML 元素具有空内容（empty content）</li>
+<li>空元素在开始标签中进行关闭（以开始标签的结束而结束）</li>
+<li>大多数 HTML 元素可拥有属性</li>
+</ul>
+<h2 id="HTML-提示：使用小写标签"><a href="#HTML-提示：使用小写标签" class="headerlink" title="HTML 提示：使用小写标签"></a>HTML 提示：使用小写标签</h2><p>HTML 标签对大小写不敏感：</p><p> 等同于 </p><p>。许多网站都使用大写的 HTML 标签。<br>W3School 使用的是小写标签，因为万维网联盟（W3C）在 HTML 4 中推荐使用小写，而在未来 (X)HTML 版本中强制使用小写。</p>
+<h2 id="行内元素与块级元素的嵌套规则？"><a href="#行内元素与块级元素的嵌套规则？" class="headerlink" title="行内元素与块级元素的嵌套规则？"></a>行内元素与块级元素的嵌套规则？</h2><p>大多数 HTML 元素可以嵌套（可以包含其他 HTML 元素）。<br>HTML 文档由嵌套的 HTML 元素构成。</p>
+<ul>
+<li>块级元素可以嵌套内联元素或者某些块级元素</li>
+<li>内联元素只能嵌套内联元素，不能嵌套块级元素<h3 id="比较典型的特例"><a href="#比较典型的特例" class="headerlink" title="比较典型的特例"></a>比较典型的特例</h3></li>
+<li>a无所不能，但a不能嵌套它本身</li>
+<li>p标签不能嵌套块级元素</li>
+<li>h1~h6、p、dt标签：只能包含内联元素，不能再包含块级元素</li>
+<li>li很强大，它可以包含div，甚至可以包含它的父元素ul或者ol</li>
+</ul>
+<h2 id="怎么改变元素的排列方式，通过设置display属性？"><a href="#怎么改变元素的排列方式，通过设置display属性？" class="headerlink" title="怎么改变元素的排列方式，通过设置display属性？"></a>怎么改变元素的排列方式，通过设置display属性？</h2><h3 id="常见的属性值有："><a href="#常见的属性值有：" class="headerlink" title="常见的属性值有："></a>常见的属性值有：</h3><p>diaplay: none    此元素不会被显示。<br>diaplay: block    此元素将显示为块级元素，此元素前后会带有换行符。<br>diaplay: inline    默认。此元素会被显示为内联元素，元素前后没有换行符。<br>diaplay: inline-block    行内块元素。（CSS2.1 新增的值）<br>diaplay: list-item    此元素会作为列表显示。<br>diaplay: inherit    规定应该从父元素继承 display 属性的值。</p>
+<h3 id="可做了解，不做深入："><a href="#可做了解，不做深入：" class="headerlink" title="可做了解，不做深入："></a>可做了解，不做深入：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">diaplay: run-<span class="keyword">in</span>	此元素会根据上下文作为块级元素或内联元素显示。</div><div class="line">diaplay: compact	CSS 中有值 compact，不过由于缺乏广泛支持，已经从 CSS2<span class="number">.1</span> 中删除。</div><div class="line">diaplay: marker	CSS 中有值 marker，不过由于缺乏广泛支持，已经从 CSS2<span class="number">.1</span> 中删除。</div><div class="line">diaplay: table	此元素会作为块级表格来显示（类似 &lt;table&gt;），表格前后带有换行符。</div><div class="line">diaplay: inline-table	此元素会作为内联表格来显示（类似 &lt;table&gt;），表格前后没有换行符。</div><div class="line">diaplay: table-row-group	此元素会作为一个或多个行的分组来显示（类似 &lt;tbody&gt;）。</div><div class="line">diaplay: table-header-group	此元素会作为一个或多个行的分组来显示（类似 &lt;thead&gt;）。</div><div class="line">diaplay: table-footer-group	此元素会作为一个或多个行的分组来显示（类似 &lt;tfoot&gt;）。</div><div class="line">diaplay: table-row	此元素会作为一个表格行显示（类似 &lt;tr&gt;）。</div><div class="line">diaplay: table-column-group	此元素会作为一个或多个列的分组来显示（类似 &lt;colgroup&gt;）。</div><div class="line">diaplay: table-column	此元素会作为一个单元格列显示（类似 &lt;col&gt;）</div><div class="line">diaplay: table-cell	此元素会作为一个表格单元格显示（类似 &lt;td&gt; 和 &lt;th&gt;）</div><div class="line">diaplay: table-caption	此元素会作为一个表格标题显示（类似 &lt;caption&gt;）</div></pre></td></tr></table></figure>
+<h2 id="display-inline-block行内块元素的兼容性问题？"><a href="#display-inline-block行内块元素的兼容性问题？" class="headerlink" title="display: inline-block行内块元素的兼容性问题？"></a>display: inline-block行内块元素的兼容性问题？</h2><p>给元素设置display: inline-block属性，元素将变成行内块元素，结合盒子模型理解，该元素整体以内联元素表现，但它的内容以块状元素表现。简单来说就是将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内，允许空格。但是这个属性目前不是所有的浏览器都支持，只有Opera和Safari支持，FireFox3和IE8据说将会支持，Firefox2和IE使用特殊办法可以实现这种效果，下面就来探讨一下</p>
+<h3 id="在火狐浏览器上存在的问题"><a href="#在火狐浏览器上存在的问题" class="headerlink" title="在火狐浏览器上存在的问题"></a>在火狐浏览器上存在的问题</h3><p>在Firefox2中有-moz-inline-stack和-moz-inline-box实现，但是这两个私有属性在某些情况下都会有异常，具体如下：<br>1、display:-moz-inline-stack<br>“当它所应用的外包装器（wrapper）的display为inline的时候，它所包含的a或button将无法点击或无法选取，需要通过position:relative还hack掉这个bug”–乌龙茶<br>2、display:-moz-inline-box<br>使用这一属性后，text-align就会出问题，必须使用Firefox的私有属性 -moz-box-align来解决<br>所以，建议不要使用-moz-inline-box，还是使用-moz-inline-stack</p>
+<h3 id="在IE浏览器上怎么实现的"><a href="#在IE浏览器上怎么实现的" class="headerlink" title="在IE浏览器上怎么实现的"></a>在IE浏览器上怎么实现的</h3><p>在IE（以下IE8除外）下，如果对内联元素，比如a或span元素，使用inline-block属性是有效的，似乎IE是支持的，其实是触发了IE的layout，从而拥有了inline-block属性的表症。这样我们就有了一种在IE下实现display:inline-block效果的两种方法：</p>
+<p>1、先用display:inline-block属性触发块元素，然后再定义display:inline，让块元素呈递为内联对象（原理：这是IE的一个经典bug，如果先定义了display:inline-block，然后再设置display为inline或block，layout不会消失），代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">div &#123;<span class="attr">display</span>:inline-block;&#125;</div><div class="line">div &#123;<span class="attr">display</span>:inline;&#125;</div></pre></td></tr></table></figure>
+<p>2、直接让块元素设置为内联对象(display:inline)，然后通过zoom:1触发块元素的layout，代码如下：<br>div {display:inline; zoom:1;}</p>
+<h3 id="怎么兼容所有浏览器？"><a href="#怎么兼容所有浏览器？" class="headerlink" title="怎么兼容所有浏览器？"></a>怎么兼容所有浏览器？</h3><p>那么为了能够让所有浏览器支持display:inline-block，综合一下，最终的实现代码如下（参考怿飞：模拟兼容性的 inline-block 属性）：</p>
+<p>display:inline-block; /<em>一方面Firefox3 beta、IE8 beta、Opera、Safari 支持，另一方面下触发IE下inline 元素的 hasLayout</em>/</p>
+<p>display:-moz-inline-stack; /<em> Firefox 的私有属性，需要时还必须用到position:relative解决上面提到的bug </em>/</p>
+<p>zoom:1; /<em>同样是IE 下触发 hasLayout</em>/<br><em>display:inline; /</em>一旦IE 下触发了 hasLayout，设置 block 元素为 inline 会使 display:inline 效果与 display:inline-block 相似*/</p>
+<p>/<em>扩展一下一些其他可能用到的属性</em>/<br>text-indent:-9999px;<br><em>text-indent:0;<br>font-size:0;<br>line-height:0; /</em> 如需隐藏文字，可用这四个属性 <em>/<br>/</em>另外上面隐藏文字，还可以用更简化的方法：line-height:超级大值;font-size:0; */</p>
+<p>overflow:hidden; /<em> 隐藏溢出的内容 </em>/</p>
+<p>vertical-align:middle; /<em> 行内垂直居中，针对 Opera 比较大的偏离 </em>/</p>
+<p>width:？px; /<em>？为任意非auto值</em>/<br>height:？px; /<em>？为任意非auto值</em>/</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/02/09/mySummary/03-行内、块、空元素的区别/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-mySummary/02-我对WEB标准的认识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>WEB标准：标准定义、好处、名词解释、常用术语、命名习惯、浏览器兼容、代码书写规范</p>
+<h3 id="1-WEB标准是什么？"><a href="#1-WEB标准是什么？" class="headerlink" title="1. WEB标准是什么？"></a>1. WEB标准是什么？</h3><pre><code>“WEB标准”是一系列标准的总称。一般的误区经常把WEB标准说成DIV+CSS。准确的说法应该是：采用W3C推荐的WEB标准中的XHTML1.1结合CSS2.0 样式表制作页面的方法。DIV 应该指的是XHTML标签，而CSS 指的是样式表。
+</code></pre><h3 id="2-采用WEB标准开发的好处"><a href="#2-采用WEB标准开发的好处" class="headerlink" title="2. 采用WEB标准开发的好处"></a>2. 采用WEB标准开发的好处</h3><p>　　2.1 节约运营成本<br>　   2.2 用户友好性<br>　　2.3 内容跨平台的可用性<br>　　2.4 加快页面解析速度<br>　　2.5 更良好的用户体验</p>
+<h3 id="3-名词解释"><a href="#3-名词解释" class="headerlink" title="3. 名词解释"></a>3. 名词解释</h3><p>　　1. 横切<br>　　　　页面中950px宽并且对高度没有限制的容器称为一个标准横切。<br>　　2. 留白<br>　　　　两个容器或碎片之间的上、下、左、右的空白距离。<br>　　3. 继承<br>　　　　元素可以从其父级元素中获得一些可为自己使用的属性或值。<br>　　4. 图片定位<br>　　　　把图片元素放置到一个静态的、相对的、绝对的、或固定的位置中，利用CSS中对图片进行遮罩属性，多用于页面中的修饰图。<br>　　5. 底图<br>　　　　页面中在标签中使用的背景图。<br>　　6. 齐底（图）线<br>　　　　用户区分横切或碎片结束的线或图。<br>　　7. 页面结构<br>　　　　页面的基础框架，由横切、布局元素组成。<br>　　8. 焦点区（图）<br>　　　　最易注意的区域。<br>　　9. 导航<br>　　　　在页面中具有导向性的链接集合。<br>　　10. 头图<br>　　　　页面主题图片。<br>　　11. 间距<br>　　　　碎片或文字间的距离。<br>　　12. 行高<br>　　　　文字段落中行与行之间的距离。<br>　　13. 首行缩进<br>　　　　文字段落首行缩进。<br>　　14. 浮动<br>　　　　使被定义的区域脱离正常的页面文档流。<br>　　15. 碎片<br>　　　　由文字、图片组合成的内容区域。<br>　　16. 通栏广告<br>　　　　与页面内容区同宽的广告区域。<br>　　17. 功能按钮<br>　　　　具有交互属性的功能按钮。<br>　　18. 私有样式<br>　　　　当前页面独立使用的样式，不具备公用性。<br>　　19. 水平（垂直）居中<br>　　　　在页面中的某个元素处于父级的上下或左右的相同距离。<br>　　20. 标准头（尾）<br>　　　　定义相同的页面头或尾元素集合。</p>
+<h3 id="4-常用技术术语"><a href="#4-常用技术术语" class="headerlink" title="4. 常用技术术语"></a>4. 常用技术术语</h3><p>　　1. 浮动： float<br>　　2. 宽： width<br>　　3. 高： height<br>　　4. 块元素： block<br>　　5. 背景： background<br>　　6. 无序列表：ul<br>　　7. 链接： a<br>　　8. 表单： form<br>　　9. 图片： img<br>　　10. 段落： p<br>　　11. 文档类型定义： DTD<br>　　12. 字体： font-family<br>　　13. 字号： font-size<br>　　14. 边框： border<br>　　15. 文字对齐： text-align<br>　　16. 行高： line-height<br>　　17. 字色： color<br>　　18. 背景不循环： no-repeat<br>　　19. 内边距： padding<br>　　20. 外间距： margin<br>　　21. 显示方式： display<br>　　22. 悬停： hover<br>　　23. 文字修饰： text-decoration<br>　　24. 上： up<br>　　25. 底： bottom<br>　　26. 左： left<br>　　27. 右： right<br>　　28. 自动： auto<br>　　29. 粗体： bold<br>　　30. 正常： normal</p>
+<h3 id="5-一些约定"><a href="#5-一些约定" class="headerlink" title="5. 一些约定"></a>5. 一些约定</h3><p>　　良好的命名习惯，对一个WEB标准网站的开发来说，必定事半功倍。以下是常用的一些命名习惯：<br>　　1. 样式名称首字母统一为小写字母，不能为数字，下划线及特殊字符；<br>　　2. 样式名尽量语义化或简写；<br>　　3. 样式名需要组合拼写时，采用驼峰式拼写，即：KeyWord；<br>　　4. 使用px（像素）为基本计量单位；<br>　　5. 页面中空格的使用：全角：中文空格  半角： &nbsp;<br>　　6. 项目完成包中，文件及及文件名称全部采用小写字母，不使用中文文件名；<br>　　7. 减少DIV的嵌套层数；<br>　　8. 给重要图片加上alt属性；给重要的元素和截断的元素加上title；<br>　　9. 使用正确的注释方法；<br>　　10. 非特殊情况下要求表现和内容分离，代码中不要涉及任何表现的元素，如:style,font等；<br>　　11. 双标记签都要有开始和结束标签，单标记标签的后面一定要加”/“ ，如<br>， 并且有正确的层次；<br>　　12. 其它特殊符号：<br>　　　　1） &lt; ( &lt; )<br>　　　　2)  &gt; ( &gt; )</p>
+<h3 id="6-命名空间"><a href="#6-命名空间" class="headerlink" title="6. 命名空间"></a>6. 命名空间</h3><p>　　6.1 外挂样式名称<br>　　　　全局： global.css<br>　　　　　　全局样式为公站公用，为页面样式基础，页面中必须包含。<br>　　　　结构： layout.css<br>　　　　　　页面结构类型复杂，并且公用类型较多时使用。多用在首页类页面及产品类页面中。<br>　　　　私有： style.css<br>　　　　　　独立页面所使用的样式文件，页面中必须包含。<br>　　　　模块： module.css<br> 　　　　　　产品类页面应用，将可复用类模块进行剥离后，可与其它样式配合使用。<br>　　　　主题： themes.css<br>　　　　　　实现换肤功能时应用。<br>　　　　补丁： mend.css<br>　　　　　　基于以上样式进行的私有化修补。</p>
+<p>　###　6.2 常用名称<br>　　　　头：header　　　　<br>　　　　尾：footer<br>　　　　Logo： logo<br>　　　　版权： copyright<br>　　　　内容块：content<br>　　　　栏目块：column<br>　　　　结构左：left<br>　　　　结构中：center<br>　　　　结构右：right<br>　　　　矩阵导航：matrixNav<br>　　　　首页导航：indexNav<br>　　　　频道二级：channelNav<br>　　　　导航文字：navText<br>　　　　内容导航：nav<br>　　　　内容主导航：mainNav<br>　　　　子内容导航：subNav<br>　　　　边导航：sidebar<br>　　　　左导航：leftsidebar<br>　　　　右导航：rightsidebar<br>　　　　广告：ad<br>　　　　搜索：search<br>　　　　关键字：keyWord<br>　　　　标签：tag<br>　　　　菜单：menu<br>　　　　滚动：scroll<br>　　　　列表：list<br>　　　　下拉：drop<br>　　　　按钮：btn<br>　　　　登陆：login<br>　　　　登陆条：loginbar<br>　　　　注册：reg<br>　　　　提示信息：msg<br>　　　　打印：print<br>　　　　地图：map<br>　　　　功能区：shop<br>　　　　Flash：flash<br>　　　　标题：title<br>　　　　更多：more<br>　　　　博客：blog<br>　　　　视频：video<br>　　　　媒体：media<br>　　　　新闻：news<br>　　　　热点：hot<br>　　　　评论：review<br>　　　　合作：cooperate<br>　　　　联系：contact<br>　　　　加入我们：joinUs<br>　　　　合作伙伴：partner<br>　　　　友情链接：link<br>　　　　论坛社区：club<br>　　　　投票：vote<br>　　　　摘要：summary<br>　　　　服务：service<br>　　　　指南：guild<br>　　　　描述：description<br>　　　　信息：info<br>　　　　状态：status<br>　　　　注释：note<br>　　　　下载：download<br>　　　　价格：price<br>　　　　地址：address<br>　　　　产品：products<br>　　　　跳转：jump<br>　　　　条：bar<br>　　　　线：line<br>　　　　小技巧：Tips</p>
+<h3 id="7-基本设置-global-css"><a href="#7-基本设置-global-css" class="headerlink" title="7. 基本设置-global.css"></a>7. 基本设置-global.css</h3><p>　　7.1 全局设置<br>　　　　文字（text-align）：align（居中）<br>　　　　上下边距(margin, padding)：0<br>　　　　左右边距（margin）：auto（自动）<br>　　　　底色（background）：#FFF（白色）<br>　　　　字体（font-family）、字号（font-size）、字色（color）：”宋体“ 12px #666<br>　　　　body 内容整体居中 ： body&gt;div　</p>
+<p>　　　　全局CSS定义<br>　　　　/<em> 全局CSS 定义 </em>/<br>　　　　body{margin:0 auto;padding:0;background:#FFF;color:#666;font:12px ‘宋体’;text-align:center;}<br>　　　　body &gt; div{margin-right:auto;margin-left:auto;text-align:center; }<br>　　　　div,form,ul,ol,li,span,p,dl,dt,dd,img{margin:0;padding:0;border:0;}<br>　　　　h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:12px;font-weight:normal;}<br>　　　　ul,ol,li{list-style:none}<br>　　　　table,td,input,textarea{font-size:12px}</p>
+<p>7.2 页面标签初始化设置<br>　　1. 常用基本标签 div， form， ul， ol， li， span, p, dl, dt, dd, img<br>　　　　设置基本标签的间距、边框默认值为0.<br>　　2. h1~h6 标题<br>　　　　默认标题内字号 12px， 内外间距为0px， 文字不加粗。<br>　　3. ul，ol，li 列表<br>　　　　默认不显示项目符号。<br>　　4. h2 栏目标题<br>　　5. 默认链接颜色<br>　　　　常态下不显示文字下划线，颜色为灰（#333），鼠标悬浮时：显示文字下划线，颜色变为暗灰（#CCC）</p>
+<p>7.3 页面宽度<br>　　默认页面宽（area）：950px</p>
+<p>7.4 .clear<br>　　结束容器内各元素的浮动属性，使相邻容器或元素节点正常显示。</p>
+<p>9.2 推荐样式拼写顺序<br>　　1. 显示与定位： display, position, float, list-style<br>　　2. 元素自身： width, height, margin, padding, border, background<br>　　3. 文本外观：  color, font, line-height, text-align, text-decoration, other<br>      例：<br>          .test{float:left;width:950px;margin:10px;background:#fff;color:#000;}　　</p>
+<p>9.3 样式编写规则<br>　　1. 遵循W3C XHTML 代码编写规范<br>　　2. 优先公用样式，其次结构、再碎片，合并相关元素属性，按从大到小排列。<br>　　3. 样式中使用修饰图遮罩方法，将公用图片的样式名称复写定义。<br>　　4. 继承样式定义，多级关系可省略多级父元素名称，至少包含最外层父元素名称，独立碎片除外。<br>　　5. 横切以#contentA，#contentB…定义，且公用样式和横切加注释说明。<br>　　6. 样式定义简写，替除多余空格字符。</p>
+<p>12 浏览器兼容<br>　　12.1 兼容浏览器及兼容要求<br>　　　　1. IE浏览器： IE6.0, IE7.0<br>　　　　2. Firefox浏览器<br>　　　　3. Opera浏览器<br>　　　　4. Safari浏览器<br>　　　　所定义样式语法定义在常用浏览器中显示无结构、颜色、效果差异。</p>
+<p>　　12.3 各版本浏览器HACK / 12.4.1 浏览器兼容的一般写法<br>　　　　区别各版本浏览器的样式方法，注意样式定义顺序。<br>　　　　当需要解决浏览器兼容问题时，一般采用下面写法可以解决，如margin问题：<br>　　　　margin:8px: 正常语法，所有浏览器都能够正常解析<br>　　　　<em>margin:9px: 针对IE7.0的特殊写法，只针对IE7.0以上的浏览器有效。<br>           _margin:10px: 针对IE6.0的特殊写法，只针对IE6.0 以上浏览器有效。<br>　　　　_margin/*</em>/:10px: 针对IE5.0的特殊写法。 IE6.0不支持，IE7.0支持。</p>
+<p>　　12.4.3 Firefox浮动层背景图不能自动平铺<br>　　　　嵌套DIV，当子div为浮动（float）时，父div的高度在Firefox不能根据子DIV自动变化。浏览器高度不能自动计算。导致的结果是当父层div有背景色和背景图时不能自动平铺。<br>　　　　解决办法是：给父层div 添加样式clear 清除浮动，这样父div 就会随子div高度自动计算，如下代码：<br>　　　　.clear:after{content:”.”;display:block;height:0;clear:both;visibility:hidden;}<br>      .<br>      .<br>      .<br>17 代码书写规范<br>　　17.1 注释<br>　　　　17.1.1 HTML注释<br>　　　　正确的注释规范：<!-- 这里是注释 --> 感叹号后面2个横线，结束时2个横线<br>　　　　17.1.2 CSS样式注释<br>　　　　由于 CSS+DIV 制作页面，样式代码多，布局比较复杂，更便于页面后期的维护，更改。所以有必要在样式中加上注释。注释规则如下：<br>　　　　/<em> 这里是注释 </em>/</p>
+<p>　　17.2 缩进<br>　　　　根据页面代码结构进行包含缩进，这样代码层次结构清晰。<br>　　17.3 回车<br>　　　　同级间结构或碎片代码块之间添加换行。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/02/09/mySummary/02-我对WEB标准的认识/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-mySummary/01-总结笔记怎么理解前端" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -516,83 +671,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/01/12/08-ng之过滤器/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-07-ng-指令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h2 id="angularjs之-指令篇"><a href="#angularjs之-指令篇" class="headerlink" title="angularjs之(指令篇)"></a>angularjs之(指令篇)</h2><p>今天太晚了，我的代码还没整理完，消化了一些指令，暂且把代码上传一下，注释很清楚<br>
-        
-          <a class="article-more-a" href="/2017/01/11/07-ng-指令/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/01/11/07-ng-指令/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-06-网络模型/tcp/udp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-网络模型"><a href="#1-网络模型" class="headerlink" title="1.网络模型"></a>1.网络模型</h1><h3 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h3><p>7 应用层：允许访问网络资源。 通信单位：报文（指的是TCP/IP协议里广义的应用层 ）<br>6 表示层：数据的转换，加密，压缩<br>5 会话层：建立，管理，终止会话<br>4 运输层：提供可靠的进程到进程的交付和差错恢复。<br>3 网络层：从源到终点传送分组，提供网络互联。通信单位 数据报<br>2 数据链路层：将比特组织成帧结构，提供逐跳交付。通信单位 帧<br>1 物理层：经过媒体传送比特</p>
-        
-          <a class="article-more-a" href="/2017/01/10/06-网络模型/tcp/udp/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/01/10/06-网络模型/tcp/udp/">展开全文 >></a>
         </p>
       
 
