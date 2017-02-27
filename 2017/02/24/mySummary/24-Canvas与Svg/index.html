@@ -8,21 +8,13 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ES6语法新特性（第一篇）
-昨天被问到ES6，脑子有点卡壳了，之前也专门学习过，今天就花点时间整理一下系统化自己的知识链；JavaScript是由ECMAscript、BOM、DOM组成，ECMAScript实际上就是一个标准，用于规范语法和语义；">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="article">
 <meta property="og:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:url" content="http://yoursite.com/2017/02/23/mySummary/22-总结ES6新语法/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/02/24/mySummary/24-Canvas与Svg/index.html">
 <meta property="og:site_name" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:description" content="ES6语法新特性（第一篇）
-昨天被问到ES6，脑子有点卡壳了，之前也专门学习过，今天就花点时间整理一下系统化自己的知识链；JavaScript是由ECMAscript、BOM、DOM组成，ECMAScript实际上就是一个标准，用于规范语法和语义；">
-<meta property="og:image" content="http://olrychps7.bkt.clouddn.com/es6%E4%B8%AD%E7%9A%84this.png">
-<meta property="og:updated_time" content="2017-02-27T06:31:43.759Z">
+<meta property="og:updated_time" content="2017-02-24T05:56:46.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta name="twitter:description" content="ES6语法新特性（第一篇）
-昨天被问到ES6，脑子有点卡壳了，之前也专门学习过，今天就花点时间整理一下系统化自己的知识链；JavaScript是由ECMAscript、BOM、DOM组成，ECMAScript实际上就是一个标准，用于规范语法和语义；">
-<meta name="twitter:image" content="http://olrychps7.bkt.clouddn.com/es6%E4%B8%AD%E7%9A%84this.png">
   
     <link rel="alternative" href="/atom.xml" title="风吹过的，路依然远，你的故事讲到了哪，Var`Var..." type="application/atom+xml">
   
@@ -158,132 +150,12 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-mySummary/22-总结ES6新语法" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-mySummary/24-Canvas与Svg" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h1 id="ES6语法新特性（第一篇）"><a href="#ES6语法新特性（第一篇）" class="headerlink" title="ES6语法新特性（第一篇）"></a>ES6语法新特性（第一篇）</h1><hr>
-<p>昨天被问到ES6，脑子有点卡壳了，之前也专门学习过，今天就花点时间整理一下系统化自己的知识链；<br>JavaScript是由ECMAscript、BOM、DOM组成，ECMAScript实际上就是一个标准，用于规范语法和语义；<br><a id="more"></a></p>
-<h3 id="一、ECMASCript的发展史"><a href="#一、ECMASCript的发展史" class="headerlink" title="一、ECMASCript的发展史"></a>一、ECMASCript的发展史</h3><table>
-<thead>
-<tr>
-<th style="text-align:center">时间</th>
-<th style="text-align:center">版本发布</th>
-<th style="text-align:center">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1998年6月</td>
-<td style="text-align:center">ECMAScript 2.0版发布</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">1999年12月</td>
-<td style="text-align:center">3.0</td>
-<td style="text-align:center">成为JavaScript的通行标准</td>
-</tr>
-<tr>
-<td style="text-align:center">2007年10月</td>
-<td style="text-align:center">4.0草案发布</td>
-<td style="text-align:center">对3.0大幅升级，太过激进</td>
-</tr>
-<tr>
-<td style="text-align:center">2008年7月</td>
-<td style="text-align:center">终止4.0发布，修改小部分内容，改为3.1</td>
-<td style="text-align:center">之后改名为ECMAScript 5</td>
-</tr>
-<tr>
-<td style="text-align:center">2009年12月</td>
-<td style="text-align:center">5.0正式发布</td>
-<td style="text-align:center">存在不成熟问题，ES6萌芽</td>
-</tr>
-<tr>
-<td style="text-align:center">2011年6月</td>
-<td style="text-align:center">5.1版发布</td>
-<td style="text-align:center">成为ISO国际标准</td>
-</tr>
-<tr>
-<td style="text-align:center">2013年3月</td>
-<td style="text-align:center">ECMAScript 6草案冻结</td>
-<td style="text-align:center">不再添加新功能，新的功能设想将被放到ECMAScript 7</td>
-</tr>
-<tr>
-<td style="text-align:center">2013年12月</td>
-<td style="text-align:center">ECMAScript 6草案发布</td>
-<td style="text-align:center">进入12个月的讨论期，听取各方反馈</td>
-</tr>
-<tr>
-<td style="text-align:center">2015年6月17日</td>
-<td style="text-align:center">ECMAScript 6发布正式版</td>
-<td style="text-align:center">又称ECMAScript 2015</td>
-</tr>
-</tbody>
-</table>
-<p>ECMA的第39号技术专家委员会（Technical Committee 39，简称TC39）负责制订ECMAScript标准，成员包括Microsoft、Mozilla、Google等大公司。TC39的总体考虑是，ES5与ES3基本保持兼容，较大的语法修正和新功能加入，将由JavaScript.next完成。</p>
-<h3 id="二、ES6基本语法"><a href="#二、ES6基本语法" class="headerlink" title="二、ES6基本语法"></a>二、ES6基本语法</h3><h3 id="2-1-let和const"><a href="#2-1-let和const" class="headerlink" title="2.1 let和const"></a>2.1 let和const</h3><p><strong>let </strong> 声明<strong>块级作用域 </strong></p>
-<blockquote>
-<p><strong>作用域 </strong>就是一个变量的有效范围，也就是说你声明一个变量之后，这个变量在什么场合你可以使用它。<br>ES5之前JavaScript只有<strong>全局作用域 </strong>和<strong>函数作用域 </strong>，<strong>没有 </strong>块级作用域，ES6提供了let声明块级作用域（block scope）。</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta"></span></div><div class="line">'use strict';</div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">let</span> music = <span class="string">'旧时光'</span>;</div><div class="line">	<span class="keyword">var</span> music = <span class="string">'旧时光2'</span>;</div><div class="line">&#125;)</div><div class="line">	<span class="comment">// 如果使用let定义变量会出错，因为无法访问到,只能在这个函数的作用域下才有效</span></div><div class="line"><span class="built_in">console</span>.log(music);</div></pre></td></tr></table></figure>
-<p>const 是<strong>常量 </strong>的意思</p>
-<blockquote>
-<p>我们可以使用<strong>const关键词 </strong>声明一个<strong>常量 </strong>，常量<strong>一经赋值 </strong>就<strong>不能 </strong>给这个常量<strong>重新分配新的值了 </strong>。</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> name = <span class="string">'熊仔仔的呆萌小媳妇'</span>;</div><div class="line"></div><div class="line">name = <span class="string">'我的微博名'</span>;</div><div class="line"><span class="built_in">console</span>.log(name);</div></pre></td></tr></table></figure>
-<p>浏览器的控制台会报错：<strong>Uncaught TypeError: Assignment to constant variable.<br>    at <anonymous>:1:6 </anonymous></strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">const</span> myInfo = [<span class="string">'周明航'</span>];</div><div class="line">myInfo.push(<span class="string">'男'</span>);</div><div class="line">myInfo.push(<span class="string">'Web前端工程师'</span>);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(myInfo); <span class="comment">// ["周明航", "男", "Web前端工程师"]</span></div></pre></td></tr></table></figure>
-<h3 id="2-2-解构赋值"><a href="#2-2-解构赋值" class="headerlink" title="2.2 解构赋值"></a>2.2 解构赋值</h3><p>所谓的<strong>解构（Destructuring）赋值 </strong>，就是ES6允许按照一定的模式，从<strong>数组和对象 </strong>中<strong>提取值 </strong>，对变量进行赋值，需要按照对应的顺序（数组解构）</p>
-<p><strong> 2.2.1 数组的解构赋值 </strong><br><strong>之前 </strong>，如果要为变量赋值，只能<strong>直接指定值 </strong></p>
-<p>//ES5写法<br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">2</span>;</div><div class="line"><span class="keyword">var</span> c = <span class="number">3</span>;</div></pre></td></tr></table></figure></p>
-<p> //ES6写法<br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div></pre></td></tr></table></figure></p>
-<p> 上面代码表示，可以从数组中提取值，按照对应位置，对变量赋值。这种写法属于<strong>“模式匹配” </strong>，<strong>只要等号两边的模式相同，左边的变量就会被赋予对应的值 </strong>。</p>
-<p> <strong> 2.2.2 允许使用默认值 </strong><br> 解构赋值允许指定<strong>默认值 </strong></p>
- <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> [myBoolean = <span class="literal">true</span>] = []; <span class="comment">// myBoolean true </span></div><div class="line"></div><div class="line">[x, y = <span class="string">'b'</span>] = [<span class="string">'a'</span>]; <span class="comment">// x='a', y='b'</span></div><div class="line"></div><div class="line">[x, y = <span class="string">'b'</span>] = [<span class="string">'a'</span>, <span class="literal">undefined</span>]; <span class="comment">// x='a', y='b'</span></div></pre></td></tr></table></figure>
-<p> <strong>需要注意的1 </strong>：左边 [] 中 = 后面的是默认值，中间 = 右边 [] 中的是对应的要赋的值，必须一一顺序对应，如果后面<strong>缺少 </strong>或者是<strong>空 </strong>或者是<strong>undefined </strong>，都用默认值来代替</p>
-<p> <strong> 注意2 </strong> ：ES6内部使用<strong>严格相等运算符（===） </strong>，判断一个位置是否有值。    所以，如果一个数组成员不严格等于undefined，默认值是不会生效的。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">	<span class="keyword">var</span> [x = <span class="number">1</span>] = [<span class="literal">undefined</span>];</div><div class="line">	<span class="comment">//x: 1</span></div><div class="line">	<span class="keyword">var</span> [x = <span class="number">1</span>] = [<span class="literal">null</span>];</div><div class="line">	<span class="comment">//x: null</span></div><div class="line"><span class="comment">// 上面代码中，如果一个数组成员是null，默认值就不会生效，因为**null不严格等于undefined **。</span></div></pre></td></tr></table></figure>
-<p><strong> 注意3 </strong>：如果默认值是一个表达式，那么这个表达式是<strong>惰性求值 </strong>的，即<strong>只有在用到的时候，才会求值 </strong>。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(<span class="string">'aaa'</span>);</div><div class="line">&#125;</div><div class="line"><span class="comment">//f()不执行，因为后面的值直接赋值给x了</span></div><div class="line"><span class="keyword">let</span> [x = f()] = [<span class="number">1</span>];</div></pre></td></tr></table></figure>
-<p>因为x能取到值，所以函数f根本不会执行。上面的代码其实等价于下面的代码。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> x;</div><div class="line"><span class="keyword">if</span> ([<span class="number">1</span>][<span class="number">0</span>] === <span class="literal">undefined</span>) &#123;</div><div class="line">  	x = f();</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">  	x = [<span class="number">1</span>][<span class="number">0</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><strong>注意4 </strong>：默认值可以<strong>引用 </strong>解构赋值的其他变量，但该变量必须<strong>已经声明 </strong>。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> [x = <span class="number">1</span>, y = x] = [];     <span class="comment">// x=1; y=1</span></div><div class="line"><span class="keyword">let</span> [x = <span class="number">1</span>, y = x] = [<span class="number">2</span>];    <span class="comment">// x=2; y=2</span></div><div class="line"><span class="keyword">let</span> [x = <span class="number">1</span>, y = x] = [<span class="number">1</span>, <span class="number">2</span>]; <span class="comment">// x=1; y=2</span></div><div class="line"><span class="keyword">let</span> [x = y, y = <span class="number">1</span>] = [];     <span class="comment">// ReferenceError</span></div></pre></td></tr></table></figure></p>
-<p>上面最后一个表达式之所以会报错，是因为x用到默认值y时，y还没有声明。（编译，链接，执行）</p>
-<h3 id="2-2-3-对象的解构赋值"><a href="#2-2-3-对象的解构赋值" class="headerlink" title="2.2.3 对象的解构赋值"></a>2.2.3 对象的解构赋值</h3><p>解构赋值不仅可以用于<strong>数组 </strong>，还可以用于<strong>对象 </strong>。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> &#123;name, age&#125; = &#123;<span class="attr">name</span>:<span class="string">"周周"</span>, <span class="attr">age</span>:<span class="number">23</span>&#125;;	</div><div class="line"> <span class="built_in">console</span>.log(name); <span class="comment">// '周周'</span></div><div class="line"> <span class="built_in">console</span>.log(age); <span class="comment">//23</span></div></pre></td></tr></table></figure></p>
-<h3 id="2-2-4-对象解构与数组解构的区别："><a href="#2-2-4-对象解构与数组解构的区别：" class="headerlink" title="2.2.4 对象解构与数组解构的区别："></a>2.2.4 对象解构与数组解构的区别：</h3><blockquote>
-<p>1、数组的元素是按<strong>次序排列 </strong>的，变量的取值由它的<strong>位置 </strong>决定；<br>2、对象的属性<strong>没有次序 </strong>，变量必须与<strong>属性同名 </strong>，才能取到正确的值。</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">//等号左边的两个变量的次序，与等号右边两个同名属性的次序不一致，但是对取值完全没有影响。	</span></div><div class="line"><span class="keyword">var</span> &#123; name, age &#125; = &#123;  <span class="attr">age</span>: <span class="number">23</span>, <span class="attr">name</span>: <span class="string">"zhouzhou"</span> &#125;;</div><div class="line"><span class="built_in">console</span>.log(name); <span class="comment">// "zhouzhou"</span></div><div class="line"><span class="built_in">console</span>.log(age); <span class="comment">// 23</span></div><div class="line"><span class="comment">//变量没有对应的同名属性，导致取不到值，最后等于undefined</span></div><div class="line"><span class="keyword">var</span> &#123; sex &#125; = &#123; <span class="attr">name</span>: <span class="string">"zhouzhou"</span>, <span class="attr">age</span>: <span class="number">23</span> &#125;;</div><div class="line"><span class="built_in">console</span>.log(sex); <span class="comment">// undefined</span></div></pre></td></tr></table></figure>
-<h3 id="2-3-函数"><a href="#2-3-函数" class="headerlink" title="2.3 函数"></a>2.3 函数</h3><h3 id="2-3-1-为函数的参数设置默认值"><a href="#2-3-1-为函数的参数设置默认值" class="headerlink" title="2.3.1 为函数的参数设置默认值"></a>2.3.1 为函数的参数设置默认值</h3><p>在es6里面我们可以给定义的函数接收的参数设置默认的值，如果<strong>不去指定 </strong>这个函数的参数的值的话，就会<strong>使用 </strong>这些参数的<strong>默认的值 </strong>。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getAllInfo</span>(<span class="params">name = <span class="string">'周周'</span>, age = <span class="number">23</span></span>) </span>&#123;</div><div class="line">   <span class="keyword">return</span> name + <span class="string">':'</span> + age;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(getAllInfo()); <span class="comment">//无参，使用默认值 周周：23</span></div><div class="line"><span class="built_in">console</span>.log(getAllInfo(<span class="string">'菜菜'</span>, <span class="number">24</span>)); <span class="comment">// 菜菜：24</span></div></pre></td></tr></table></figure>
-<h3 id="2-3-2-…操作符"><a href="#2-3-2-…操作符" class="headerlink" title="2.3.2 …操作符"></a>2.3.2 …操作符</h3><p>…是es6中新添加的一种操作符，可以叫做<strong>spread（扩展）</strong>或者<strong>rest（剩余）</strong>，具体这个操作符是什么意思，要取决于怎么去使用它。</p>
-<p><strong>rest（剩余操作符） </strong></p>
-<blockquote>
-<p>剩余操作符一般会用在<strong>函数的参数 </strong>里面。</p>
-</blockquote>
-<p>比如:<br>想让一个函数支持更多的参数，参数的数量<strong>不受限制 </strong>，这个时候就可以使用剩余操作符。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getAllGirl</span>(<span class="params">first, sencond, ...third</span>) </span>&#123;</div><div class="line">    	<span class="built_in">console</span>.log(first, sencond, third);</div><div class="line"> 	&#125;</div><div class="line"><span class="comment">//剩余操作符后面的变量会变成一个**数组 **，**多余的参数 **会被放入这个数组中。</span></div><div class="line">getAllGirl(<span class="string">'春香'</span>, <span class="string">"夏荷"</span>, <span class="string">"秋香"</span>, <span class="string">"冬梅"</span>); <span class="comment">//春香 夏荷 秋香</span></div></pre></td></tr></table></figure>
-<p><strong>spread（扩展）运算符 </strong></p>
-<p>…操作符如果用在数组的<strong>前面 </strong>，作用就是将这个数组<strong>展开 </strong>，因此称为<strong>扩展操作符 </strong>。相当于<strong>rest </strong>操作符的<strong>逆运算 </strong>。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> allName = [<span class="string">'小龙女'</span>, <span class="string">"杨过"</span>];</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(allName); <span class="comment">// ['小龙女', "杨过"]</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(...allName); <span class="comment">// 小龙女 杨过</span></div></pre></td></tr></table></figure>
-<p><strong>如果将…allName放入到数组中，就会变成数组的合并 </strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> otherName = [<span class="string">'郭靖'</span>, <span class="string">'黄蓉'</span>, <span class="string">'老顽童'</span>, ...allName];</div><div class="line"><span class="built_in">console</span>.log(otherName); <span class="comment">// ['郭靖', '黄蓉', '老顽童', '小龙女', "杨过"]</span></div></pre></td></tr></table></figure>
-<h3 id="2-3-3-函数的name属性"><a href="#2-3-3-函数的name属性" class="headerlink" title="2.3.3 函数的name属性"></a>2.3.3 函数的name属性</h3><p>es6给函数添加了一个name属性，使用这个属性我们可以得到函数的名字。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">  'use strict'</span>;</div><div class="line"><span class="comment">//使用自定义函数，它的name属性的值就是函数的名字。</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setYourLife</span>(<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(setYourLife.name);</div><div class="line"><span class="comment">//使用匿名函数表达式定义的函数，它的name属性的值就是变量的名字。</span></div><div class="line"><span class="keyword">var</span> youLife = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(youLife.name);</div><div class="line"><span class="comment">//让变量等于一个自定义函数，它的name属性的值就是函数声明时的名字，因为它的优先级更高一点。</span></div><div class="line"><span class="keyword">var</span> lifeAll = <span class="function"><span class="keyword">function</span> <span class="title">setLife</span>(<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(lifeAll.name);</div></pre></td></tr></table></figure>
-<h3 id="2-3-4-箭头函数（以后会经常用，重中之重）"><a href="#2-3-4-箭头函数（以后会经常用，重中之重）" class="headerlink" title="2.3.4 箭头函数（以后会经常用，重中之重）"></a>2.3.4 箭头函数（以后会经常用，重中之重）</h3><p>ES6使用箭头函数（arrow function）定义函数，更加方便，新的框架已经全面拥抱ES6写法</p>
-<p>ES5之前定义函数<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">  	'use strict'</span>;</div><div class="line">	<span class="comment">// ES5写法</span></div><div class="line">   <span class="keyword">var</span> total = <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</div><div class="line">       <span class="keyword">return</span> a + b;</div><div class="line">   &#125;; </div><div class="line"><span class="built_in">console</span>.log(total(<span class="number">1</span>, <span class="number">2</span>));  <span class="comment">//3</span></div></pre></td></tr></table></figure></p>
-<p>ES6之箭头函数</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> total = <span class="function">(<span class="params">a, b</span>) =&gt;</span> &#123;</div><div class="line">	<span class="keyword">return</span> a + b;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(total(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">// 3</span></div></pre></td></tr></table></figure>
-<p><strong>this 关键词的作用（很重要） </strong><br>带有this关键词的箭头函数行为<strong>不同于 </strong>正常函数</p>
-<p><strong>不同点 </strong><br>在Javascript中每个函数定义了他自己的<strong>this上下文 </strong>，但是<strong>箭头函数 </strong>中的this则是<strong>获得最接近（enclosing 封闭者）上下文的值 </strong>。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">'use strict'</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">this</span>.age = <span class="number">10</span>;</div><div class="line">	setInterval(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</div><div class="line">		<span class="keyword">this</span>.age++;</div><div class="line">		<span class="built_in">console</span>.log(<span class="keyword">this</span>.age);</div><div class="line">	&#125;, <span class="number">1000</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> boy = <span class="keyword">new</span> Person();</div></pre></td></tr></table></figure>
-<p>在控制台里会每隔一秒钟打印一次年龄，如果不清除定时器就会一直执行，this执向最近的上下文的值</p>
-<p><img src="http://olrychps7.bkt.clouddn.com/es6%E4%B8%AD%E7%9A%84this.png" alt=""></p>
-<p><strong>关于博客中的图片外链，之前我用的是本地的，但是发现不能上传到博客，使用网络上的图片，一段时间之后网链失效，推荐大家使用</strong>千牛云 <strong> 自己注册个账号，然后可以开辟一个空间，上传自己的图片，这样就可以使用自己图片的外链，也不会失效 </strong></p>
-<p>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
-<p>++++++++++先更这些，一会更下一篇++++++++++++++++++</p>
-
+        
       
 
       
@@ -362,7 +234,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/23/mySummary/22-总结ES6新语法/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/24/mySummary/24-Canvas与Svg/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -376,7 +248,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/02/23/mySummary/23-ES6语法2/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/02/27/css/01-使用border绘制三角形/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -386,7 +258,7 @@
     </a>
   
   
-    <a href="/2017/02/22/mySummary/21-今天面试的题目/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/02/23/vuejs/01-vue第一篇/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>

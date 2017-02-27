@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
 <meta property="og:description" content="常见的源代码管理工具有Git和SVN，使用过一段时间你就会发现Git使用更加方便快捷，下面就介绍一下Git：">
 <meta property="og:image" content="http://images2015.cnblogs.com/blog/784107/201511/784107-20151115191756353-2008577049.png">
-<meta property="og:updated_time" content="2017-02-15T12:49:17.497Z">
+<meta property="og:updated_time" content="2017-02-27T07:18:57.079Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
 <meta name="twitter:description" content="常见的源代码管理工具有Git和SVN，使用过一段时间你就会发现Git使用更加方便快捷，下面就介绍一下Git：">
@@ -163,21 +163,10 @@
         <hr>
 <h1 id="常见的源代码管理工具有Git和SVN，使用过一段时间你就会发现Git使用更加方便快捷，下面就介绍一下Git："><a href="#常见的源代码管理工具有Git和SVN，使用过一段时间你就会发现Git使用更加方便快捷，下面就介绍一下Git：" class="headerlink" title="常见的源代码管理工具有Git和SVN，使用过一段时间你就会发现Git使用更加方便快捷，下面就介绍一下Git："></a>常见的源代码管理工具有Git和SVN，使用过一段时间你就会发现Git使用更加方便快捷，下面就介绍一下Git：</h1><hr>
 <a id="more"></a>
-<h3 id="1-什么是Git？"><a href="#1-什么是Git？" class="headerlink" title="1.什么是Git？"></a>1.什么是Git？</h3><ul>
-<li><p>Git 是一款免费的、开源的、分布式的版本控制系统。旨在快速高效地处理无论规模大小的任何软件工程。</p>
-</li>
-<li><p>每一个 Git克隆 都是一个完整的文件库，含有全部历史记录和修订追踪能力，不依赖于网络连接或中心服务器。其最大特色就是“分支”及“合并”操作非常快速、简便。</p>
-<h4 id="1-2-Git的特点？"><a href="#1-2-Git的特点？" class="headerlink" title="1.2 Git的特点？"></a>1.2 Git的特点？</h4></li>
-<li><strong>源代码</strong> 管理工具</li>
-<li><strong>开源</strong> 的 <strong> “分布式” </strong> 的版本控制管理工具</li>
-<li>在世界上所有的分布式版本控制工具中，git是<strong>最快、最简单、最流行</strong>的</li>
-</ul>
-<h3 id="2-Git的起源和现状？"><a href="#2-Git的起源和现状？" class="headerlink" title="2.Git的起源和现状？"></a>2.Git的起源和现状？</h3><ul>
-<li>它是<strong>Linux之父</strong>Linus Benedict Torvolds开发的</li>
-<li>当初开发Git仅仅是为了辅助<strong>Linux内核</strong>的开发（管理源代码）</li>
-<li>国内外使用情况，国外已经很普及，国内大部分使用的是SVN，但也开始慢慢普及</li>
-<li>越来越多的开源项目已经转移到git</li>
-</ul>
+<h3 id="1-什么是Git？"><a href="#1-什么是Git？" class="headerlink" title="1.什么是Git？"></a>1.什么是Git？</h3><p> Git 是一款免费的、开源的、分布式的版本控制系统。旨在快速高效地处理无论规模大小的任何软件工程。</p>
+<p> 每一个 Git克隆 都是一个完整的文件库，含有全部历史记录和修订追踪能力，不依赖于网络连接或中心服务器。其最大特色就是“分支”及“合并”操作非常快速、简便。</p>
+<h4 id="1-2-Git的特点？"><a href="#1-2-Git的特点？" class="headerlink" title="1.2 Git的特点？"></a>1.2 Git的特点？</h4><p> <strong>源代码</strong> 管理工具<br> <strong>开源</strong> 的 <strong> “分布式” </strong> 的版本控制管理工具<br> 在世界上所有的分布式版本控制工具中，git是<strong>最快、最简单、最流行</strong>的</p>
+<h3 id="2-Git的起源和现状？"><a href="#2-Git的起源和现状？" class="headerlink" title="2.Git的起源和现状？"></a>2.Git的起源和现状？</h3><p> 它是<strong>Linux之父</strong>Linus Benedict Torvolds开发的<br> 当初开发Git仅仅是为了辅助<strong>Linux内核</strong>的开发（管理源代码）<br> 国内外使用情况，国外已经很普及，国内大部分使用的是SVN，但也开始慢慢普及<br> 越来越多的开源项目已经转移到git</p>
 <h3 id="3-Git与SVN的区别？"><a href="#3-Git与SVN的区别？" class="headerlink" title="3. Git与SVN的区别？"></a>3. Git与SVN的区别？</h3><h4 id="3-1-SVN"><a href="#3-1-SVN" class="headerlink" title="3.1 SVN"></a>3.1 SVN</h4><p>SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而干活的时候，用的都是自己的电脑，所以首先要从中央服务器哪里得到最新的版本，然后干活，干完后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，如果在局域网还可以，带宽够大，速度够快，如果在互联网下，如果网速慢的话，就纳闷了。</p>
 <h4 id="3-2-Git"><a href="#3-2-Git" class="headerlink" title="3.2 Git"></a>3.2 Git</h4><p>Git是分布式版本控制系统，那么它就没有中央服务器的，每个人的电脑就是一个完整的版本库，这样，工作的时候就不需要联网了，因为版本都是在自己的电脑上。既然每个人的电脑都有一个完整的版本库，那多个人如何协作呢？比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。</p>
 <h4 id="3-3-区别"><a href="#3-3-区别" class="headerlink" title="3.3 区别"></a>3.3 区别</h4><table>

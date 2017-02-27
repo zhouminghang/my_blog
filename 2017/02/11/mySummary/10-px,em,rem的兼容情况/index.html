@@ -8,31 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？
-1. PX特点px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。(引自CSS2.0手册)
-
-IE无法调整那些使用px作为单位的字体大小；
-国外的大部分网站能够调整的原因在于其使用了em或rem作为字体单位；
-Firefox能够调整px和em，rem，但是96%以上">
+  <meta name="description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
 <meta property="og:type" content="article">
 <meta property="og:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
 <meta property="og:url" content="http://yoursite.com/2017/02/11/mySummary/10-px,em,rem的兼容情况/index.html">
 <meta property="og:site_name" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？
-1. PX特点px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。(引自CSS2.0手册)
-
-IE无法调整那些使用px作为单位的字体大小；
-国外的大部分网站能够调整的原因在于其使用了em或rem作为字体单位；
-Firefox能够调整px和em，rem，但是96%以上">
-<meta property="og:updated_time" content="2017-02-14T13:18:55.284Z">
+<meta property="og:description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
+<meta property="og:updated_time" content="2017-02-27T07:23:19.855Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta name="twitter:description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？
-1. PX特点px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。(引自CSS2.0手册)
-
-IE无法调整那些使用px作为单位的字体大小；
-国外的大部分网站能够调整的原因在于其使用了em或rem作为字体单位；
-Firefox能够调整px和em，rem，但是96%以上">
+<meta name="twitter:description" content="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？">
   
     <link rel="alternative" href="/atom.xml" title="风吹过的，路依然远，你的故事讲到了哪，Var`Var..." type="application/atom+xml">
   
@@ -175,12 +160,12 @@ Firefox能够调整px和em，rem，但是96%以上">
       
         <hr>
 <h1 id="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？"><a href="#国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？" class="headerlink" title="国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？"></a>国内的设计师大都喜欢用px，而国外的网站大都喜欢用em和rem，那么三者有什么区别，又各自有什么优劣呢？</h1><hr>
+<a id="more"></a>
 <h3 id="1-PX特点"><a href="#1-PX特点" class="headerlink" title="1. PX特点"></a>1. PX特点</h3><p>px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。(引自CSS2.0手册)</p>
 <ol>
 <li>IE无法调整那些使用px作为单位的字体大小；</li>
 <li>国外的大部分网站能够调整的原因在于其使用了em或rem作为字体单位；</li>
-<li>Firefox能够调整px和em，rem，但是96%以上的中国网民使用IE浏览器(或内核)。<a id="more"></a>
-</li>
+<li>Firefox能够调整px和em，rem，但是96%以上的中国网民使用IE浏览器(或内核)。</li>
 </ol>
 <h3 id="em特点"><a href="#em特点" class="headerlink" title="em特点"></a>em特点</h3><p>em是相对长度单位。相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。(引自CSS2.0手册)任意浏览器的默认字体高都是16px。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你的原来的px数值除以10，然后换上em作为单位就行了。</p>
 <ol>
