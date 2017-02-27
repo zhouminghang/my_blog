@@ -8,13 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="几种定位的区别
+position可以改变元素的默认位置，它的值有absolute、relative、static、fixed、inherit">
+<meta property="og:type" content="article">
 <meta property="og:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:url" content="http://yoursite.com/2017/02/14/mySummary/11-移动端优化/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/02/27/css/02-关于定位/index.html">
 <meta property="og:site_name" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:updated_time" content="2017-02-27T08:38:42.679Z">
+<meta property="og:description" content="几种定位的区别
+position可以改变元素的默认位置，它的值有absolute、relative、static、fixed、inherit">
+<meta property="og:updated_time" content="2017-02-27T09:17:40.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta name="twitter:description" content="几种定位的区别
+position可以改变元素的默认位置，它的值有absolute、relative、static、fixed、inherit">
   
     <link rel="alternative" href="/atom.xml" title="风吹过的，路依然远，你的故事讲到了哪，Var`Var..." type="application/atom+xml">
   
@@ -150,12 +156,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-mySummary/11-移动端优化" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-css/02-关于定位" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <hr>
+<h1 id="几种定位的区别"><a href="#几种定位的区别" class="headerlink" title="几种定位的区别"></a>几种定位的区别</h1><hr>
+<p>position可以改变元素的默认位置，它的值有absolute、relative、static、fixed、inherit</p>
+<a id="more"></a>
+<h3 id="static-该值为position的默认值"><a href="#static-该值为position的默认值" class="headerlink" title="static:该值为position的默认值"></a>static:该值为position的默认值</h3><h3 id="inherit-继承"><a href="#inherit-继承" class="headerlink" title="inherit 继承"></a>inherit 继承</h3><h3 id="相对定位"><a href="#相对定位" class="headerlink" title="相对定位"></a>相对定位</h3><blockquote>
+<p>position: relative;</p>
+</blockquote>
+<p>元素相对于<strong>其原有的位置 </strong>进行定位，<strong>保留原有的位置，不脱离文档流 </strong><br>设置<strong>z-index的值 </strong> 可以改变图层的显示顺序</p>
+<h3 id="绝对定位"><a href="#绝对定位" class="headerlink" title="绝对定位"></a>绝对定位</h3><blockquote>
+<p>position: absolute; </p>
+</blockquote>
+<p>1、绝对定位要与<strong>相对定位 </strong>配合使用，若子元素为绝对定位，则<strong>父元素 </strong>应设置为相对定位。</p>
+<p>2、给盒子设置了绝对定位，该盒子<strong>不占位置（脱离文档流） </strong></p>
+<p>3、给行内元素设置绝对定位后，该元素转化为了<strong>行内块元素 </strong></p>
+<p>4、若父元素没有设置相对定位，则按<strong>层级 </strong>往上找<strong>父元素的父元素 </strong>是否有相对定位；若都没有，则以<strong>body </strong>为基准</p>
+<h3 id="固定定位"><a href="#固定定位" class="headerlink" title="固定定位"></a>固定定位</h3><blockquote>
+<p>position: fixed;</p>
+</blockquote>
+<p>1、固定定位<strong>不占位置（脱离文档流） </strong></p>
+<p>2、将行内元素转化为<strong>行内块元素 </strong></p>
+<p>3、可定位相对于<strong>浏览器窗口 </strong>的指定坐标</p>
+
       
 
       
@@ -234,7 +261,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/14/mySummary/11-移动端优化/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/27/css/02-关于定位/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -248,17 +275,8 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/02/14/mySummary/12-关于图片优化之智图/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/02/11/mySummary/10-px,em,rem的兼容情况/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/02/27/css/01-使用border绘制三角形/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
