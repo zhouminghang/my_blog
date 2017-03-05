@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
+  <title>风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="JavaScript有哪几种创建对象的方式？javascript创建对象简单的说,无非就是使用内置对象或各种自定义对象，当然还可以用JSON；但写法有很多种，也能混合使用。">
+<meta property="og:type" content="article">
 <meta property="og:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:url" content="http://yoursite.com/archives/page/3/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/03/05/JavaScript/01-JavaScript创建对象的方式/index.html">
 <meta property="og:site_name" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta property="og:description" content="JavaScript有哪几种创建对象的方式？javascript创建对象简单的说,无非就是使用内置对象或各种自定义对象，当然还可以用JSON；但写法有很多种，也能混合使用。">
+<meta property="og:updated_time" content="2017-03-05T12:35:36.597Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta name="twitter:description" content="JavaScript有哪几种创建对象的方式？javascript创建对象简单的说,无非就是使用内置对象或各种自定义对象，当然还可以用JSON；但写法有很多种，也能混合使用。">
   
     <link rel="alternative" href="/atom.xml" title="风吹过的，路依然远，你的故事讲到了哪，Var`Var..." type="application/atom+xml">
   
@@ -149,236 +153,132 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-JavaScript/01-JavaScript创建对象的方式" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h1 id="JavaScript有哪几种创建对象的方式？"><a href="#JavaScript有哪几种创建对象的方式？" class="headerlink" title="JavaScript有哪几种创建对象的方式？"></a>JavaScript有哪几种创建对象的方式？</h1><p>javascript创建对象简单的说,无非就是使用内置对象或各种自定义对象，当然还可以用JSON；但写法有很多种，也能混合使用。</p>
+<hr>
+<a id="more"></a>
+<h3 id="1-使用对象字面量的方式"><a href="#1-使用对象字面量的方式" class="headerlink" title="1.使用对象字面量的方式"></a>1.使用对象字面量的方式</h3><p>以一个人为例，他身上可以抽象出来具体的属性和方法，比如他有姓名，年龄，身高，职业等属性，也可以具体他会唱歌这个方法，使用字面量的表示如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> person = &#123;</div><div class="line">	name = <span class="string">'周明航'</span>,</div><div class="line">	age = <span class="number">23</span>,</div><div class="line">	height = <span class="number">172</span>,</div><div class="line">	job = <span class="string">'web前端攻城狮'</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">person.sing = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(<span class="string">'他很会唱歌'</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="2-使用function关键字来模拟无参的构造函数"><a href="#2-使用function关键字来模拟无参的构造函数" class="headerlink" title="2.使用function关键字来模拟无参的构造函数"></a>2.使用function关键字来模拟无参的构造函数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;&#125;</div><div class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> Person();</div><div class="line"></div><div class="line"><span class="comment">//定义一个function，如果使用new"实例化",该function可以看作是一个Class</span></div><div class="line">person.name = <span class="string">"周zz"</span>;</div><div class="line">person.age = <span class="number">23</span>;</div><div class="line">person.job = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">   alert(<span class="string">"Hello "</span> + person.name);</div><div class="line">&#125;</div><div class="line">person.job();</div></pre></td></tr></table></figure>
+<h3 id="3-用function来模拟参构造函数来实现（用this关键字定义构造的上下文属性）"><a href="#3-用function来模拟参构造函数来实现（用this关键字定义构造的上下文属性）" class="headerlink" title="3.用function来模拟参构造函数来实现（用this关键字定义构造的上下文属性）"></a>3.用function来模拟参构造函数来实现（用this关键字定义构造的上下文属性）</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name,age,hobby</span>) </span>&#123; </div><div class="line">  <span class="keyword">this</span>.name = name; <span class="comment">//this作用域：当前对象</span></div><div class="line">  <span class="keyword">this</span>.age = age; </div><div class="line">  <span class="keyword">this</span>.job = job; </div><div class="line">  <span class="keyword">this</span>.info = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">      alert(<span class="string">"我叫"</span> + <span class="keyword">this</span>.name + <span class="string">"，今年"</span> + <span class="keyword">this</span>.age + <span class="string">"岁，是个"</span> + <span class="keyword">this</span>.job); </div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> Zz = <span class="keyword">new</span> Person(<span class="string">"周zz"</span>, <span class="number">23</span>, <span class="string">"web前端攻城狮"</span>);</div><div class="line"> <span class="comment">//实例化、创建对象</span></div><div class="line">Zz.info(); <span class="comment">//调用info()方法</span></div></pre></td></tr></table></figure>
+<h3 id="4-用工厂方式来创建（内置对象）"><a href="#4-用工厂方式来创建（内置对象）" class="headerlink" title="4.用工厂方式来创建（内置对象）"></a>4.用工厂方式来创建（内置对象）</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> jsCreater = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">jsCreater.name = <span class="string">"Brendan Eich"</span>; <span class="comment">//JavaScript的发明者</span></div><div class="line">jsCreater.work = <span class="string">"JavaScript"</span>;</div><div class="line">jsCreater.info = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  alert(<span class="string">"我是"</span>+<span class="keyword">this</span>.work+<span class="string">"的发明者"</span>+<span class="keyword">this</span>.name);</div><div class="line">&#125;</div><div class="line">jsCreater.info();</div></pre></td></tr></table></figure>
+<h3 id="5-用原型方式来创建"><a href="#5-用原型方式来创建" class="headerlink" title="5.用原型方式来创建"></a>5.用原型方式来创建</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Standard</span>(<span class="params"></span>)</span>&#123;&#125;</div><div class="line">Standard.prototype.name = <span class="string">"ECMAScript"</span>;</div><div class="line">Standard.prototype.event = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  alert(<span class="keyword">this</span>.name+<span class="string">"是脚本语言标准规范"</span>);</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> jiaoben = <span class="keyword">new</span> Standard();</div><div class="line">jiaoben.event();</div></pre></td></tr></table></figure>
+<h3 id="6-用混合方式来创建"><a href="#6-用混合方式来创建" class="headerlink" title="6.用混合方式来创建"></a>6.用混合方式来创建</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">iPhone</span>(<span class="params">name,event</span>) </span>&#123;</div><div class="line">   <span class="keyword">this</span>.name = name;</div><div class="line">   <span class="keyword">this</span>.event = event;</div><div class="line">&#125;</div><div class="line">iPhone.prototype.sell = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  alert(<span class="string">"我是"</span>+<span class="keyword">this</span>.name+<span class="string">"，我是iPhone5s的"</span>+<span class="keyword">this</span>.event+<span class="string">"~ haha!"</span>);</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> SE = <span class="keyword">new</span> iPhone(<span class="string">"iPhone SE"</span>,<span class="string">"官方翻新机"</span>);</div><div class="line">SE.sell();</div></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/10/mySummary/08-精灵图的利弊/" class="archive-article-date">
-  	<time datetime="2017-02-10T03:29:26.810Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-10</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/05/JavaScript/01-JavaScript创建对象的方式/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/10/mySummary/07-浏览器内核/" class="archive-article-date">
-  	<time datetime="2017-02-09T17:00:01.869Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-10</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/10/mySummary/06-总结一下常见的浏览器及内核/" class="archive-article-date">
-  	<time datetime="2017-02-09T16:07:41.250Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-10</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+  
+    <a href="/2017/02/27/css/02-关于定位/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/09/mySummary/05-语义化的HTML结构/" class="archive-article-date">
-  	<time datetime="2017-02-09T15:23:58.603Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-09</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/09/mySummary/04-h5语义化，新增标签/" class="archive-article-date">
-  	<time datetime="2017-02-09T13:03:11.410Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-09</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/09/mySummary/03-行内、块、空元素的区别/" class="archive-article-date">
-  	<time datetime="2017-02-09T11:53:53.141Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-09</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/09/mySummary/02-我对WEB标准的认识/" class="archive-article-date">
-  	<time datetime="2017-02-09T01:00:54.329Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-09</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/08/mySummary/01-总结笔记怎么理解前端/" class="archive-article-date">
-  	<time datetime="2017-02-08T13:23:33.719Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-08</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/08/14-Java环境配置/" class="archive-article-date">
-  	<time datetime="2017-02-08T11:53:31.447Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-08</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/06/13-react入门/" class="archive-article-date">
-  	<time datetime="2017-02-06T12:16:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-06</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
+    <div class="duoshuo"></div>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/archives/page/4/">4</a><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/4/">Next &raquo;</a>
-    </nav>
-  
+
 
 
           </div>
@@ -401,8 +301,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
