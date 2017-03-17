@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
+  <title>风吹过的，路依然远，你的故事讲到了哪，Var`Var...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="函数函数作为JavaScript的一个核心存在，它可以封装任意多条语句，可以在任何地方，任何时候调用执行。">
+<meta property="og:type" content="article">
 <meta property="og:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
-<meta property="og:url" content="http://yoursite.com/archives/page/4/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/03/17/JavaScript/04-return/index.html">
 <meta property="og:site_name" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta property="og:description" content="函数函数作为JavaScript的一个核心存在，它可以封装任意多条语句，可以在任何地方，任何时候调用执行。">
+<meta property="og:updated_time" content="2017-03-17T10:10:27.069Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风吹过的，路依然远，你的故事讲到了哪，Var`Var...">
+<meta name="twitter:description" content="函数函数作为JavaScript的一个核心存在，它可以封装任意多条语句，可以在任何地方，任何时候调用执行。">
   
     <link rel="alternative" href="/atom.xml" title="风吹过的，路依然远，你的故事讲到了哪，Var`Var..." type="application/atom+xml">
   
@@ -149,236 +153,141 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-JavaScript/04-return" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="函数作为JavaScript的一个核心存在，它可以封装任意多条语句，可以在任何地方，任何时候调用执行。"><a href="#函数作为JavaScript的一个核心存在，它可以封装任意多条语句，可以在任何地方，任何时候调用执行。" class="headerlink" title="函数作为JavaScript的一个核心存在，它可以封装任意多条语句，可以在任何地方，任何时候调用执行。"></a>函数作为JavaScript的一个核心存在，它可以封装任意多条语句，可以在任何地方，任何时候调用执行。</h2><a id="more"></a> 
+<h3 id="1-基本语法"><a href="#1-基本语法" class="headerlink" title="1.基本语法"></a>1.基本语法</h3><p>ECMAScript中的函数使用<strong> function </strong>关键字来声明，后跟一组参数以及函数体。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">functionName</span>(<span class="params">arg0, arg1, ..., argN</span>) </span>&#123;</div><div class="line">	<span class="comment">// 执行的语句</span></div><div class="line">	 statements</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>函数的<strong> 调用 </strong>通过<strong> 函数名 </strong>，后面还要加上一对圆括号和参数（圆括号里面的参数如果有多个，用逗号隔开）</p>
+<blockquote>
+<pre><code>// 调用
+functionName(arg0, arg1, ..., argN);
+</code></pre></blockquote>
+<p>示例</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">function myInfo(name, message) &#123;</div><div class="line">	alert('my name is' + name + ',' + message);</div><div class="line">&#125;</div><div class="line">// 调用</div><div class="line">myInfo(zhouMH, I'm a web engineer!);</div><div class="line">// 输出结果(以弹出框的形式): my name is zhouMH, I'm a web engineer!</div></pre></td></tr></table></figure>
+<h3 id="ECMAScript中的函数在定义时不必指定是否返回值。实际上，任何函数在任何时候都可以通过return语句后跟要返回的值来实现返回值。"><a href="#ECMAScript中的函数在定义时不必指定是否返回值。实际上，任何函数在任何时候都可以通过return语句后跟要返回的值来实现返回值。" class="headerlink" title="ECMAScript中的函数在定义时不必指定是否返回值。实际上，任何函数在任何时候都可以通过return语句后跟要返回的值来实现返回值。"></a>ECMAScript中的函数在定义时不必指定是否返回值。实际上，任何函数在任何时候都可以通过return语句后跟要返回的值来实现返回值。</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1, num2</span>) </span>&#123;</div><div class="line">	<span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//调用</span></div><div class="line"><span class="keyword">var</span> result = sum(<span class="number">1</span>, <span class="number">3</span>);</div></pre></td></tr></table></figure>
+<p>###　这个函数会执行完return语句之后停止并立即退出，因此，在return之后的任何代码永远都不会被执行。</p>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1, num2</span>) </span>&#123;</div><div class="line">	<span class="keyword">return</span> num1 + num2;</div><div class="line">	alert(<span class="string">'Hello world'</span>); <span class="comment">// 永远不会执行</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>由于调用alert()函数的语句位于return语句之后，因此永远不会显示警告框。当然一个函数中也可以包含多个return语句。</p>
+<p>例如：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">diff</span>(<span class="params">num1, num2</span>) </span>&#123;</div><div class="line">	<span class="keyword">if</span> (num1 &lt; num2) &#123;</div><div class="line">		<span class="keyword">return</span> num2 - num1;</div><div class="line">	&#125; <span class="keyword">else</span> &#123;</div><div class="line">		<span class="keyword">return</span> num1 - num2;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="return语句也可以-不带任何返回值-，在这种情况下，函数在停止执行后将返回-undefined-值。这种用法一般用在需要提前停止函数执行而又不需要返回值的情况下。"><a href="#return语句也可以-不带任何返回值-，在这种情况下，函数在停止执行后将返回-undefined-值。这种用法一般用在需要提前停止函数执行而又不需要返回值的情况下。" class="headerlink" title="return语句也可以 不带任何返回值 ，在这种情况下，函数在停止执行后将返回 undefined 值。这种用法一般用在需要提前停止函数执行而又不需要返回值的情况下。"></a>return语句也可以<strong> 不带任何返回值 </strong>，在这种情况下，函数在停止执行后将返回<strong> undefined </strong>值。这种用法一般用在需要提前停止函数执行而又不需要返回值的情况下。</h3><p>例如：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params">name, message</span>) </span>&#123;</div><div class="line">	<span class="keyword">return</span>;</div><div class="line">	alert(<span class="string">'Hello'</span> + name + <span class="string">','</span> + message); <span class="comment">// 永远不会调用执行</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="推荐的做法是"><a href="#推荐的做法是" class="headerlink" title="推荐的做法是"></a>推荐的做法是</h3><p>1.要么让函数始终都返回一个值；<br>2.要么永远都不要返回值；<br>否则，如果函数有时候返回值，有时候有不返回值，会给调试代码带来不便</p>
+<h3 id="严格模式对函数的一些限制："><a href="#严格模式对函数的一些限制：" class="headerlink" title="严格模式对函数的一些限制："></a>严格模式对函数的一些限制：</h3><p>1.不能把函数命名为eval或arguments；<br>2.不能把参数命名为eval或arguments；<br>3.不能出现两个命名参数同名的情况；<br>如果发生以上情况，就会导致语法错误，代码无法执行。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/08/mySummary/01-总结笔记怎么理解前端/" class="archive-article-date">
-  	<time datetime="2017-02-08T13:23:33.719Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-08</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/17/JavaScript/04-return/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/08/14-Java环境配置/" class="archive-article-date">
-  	<time datetime="2017-02-08T11:53:31.447Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-08</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/06/13-react入门/" class="archive-article-date">
-  	<time datetime="2017-02-06T12:16:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-06</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/10/JavaScript/03-indexd/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/03/12-Linux常用的命令/" class="archive-article-date">
-  	<time datetime="2017-02-03T10:02:34.212Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/18/11-https/" class="archive-article-date">
-  	<time datetime="2017-01-18T11:47:51.414Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-18</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/18/10-http/" class="archive-article-date">
-  	<time datetime="2017-01-18T11:14:57.643Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-18</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/12/09-ng之路由/" class="archive-article-date">
-  	<time datetime="2017-01-12T11:03:48.055Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/12/08-ng之过滤器/" class="archive-article-date">
-  	<time datetime="2017-01-11T16:29:38.943Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/11/07-ng-指令/" class="archive-article-date">
-  	<time datetime="2017-01-10T17:31:45.918Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-11</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/10/06-网络模型/tcp/udp/" class="archive-article-date">
-  	<time datetime="2017-01-10T09:47:00.858Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-10</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
+    <div class="duoshuo"></div>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/page/3/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/5/">Next &raquo;</a>
-    </nav>
-  
+
 
 
           </div>
@@ -401,8 +310,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
