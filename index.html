@@ -151,6 +151,184 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-项目环境的搭建/git安装与环境搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="项目环境搭建之—-GIT"><a href="#项目环境搭建之—-GIT" class="headerlink" title="项目环境搭建之—-GIT"></a>项目环境搭建之—-GIT</h1><h2 id="git的安装与环境搭建的整体过程与步骤"><a href="#git的安装与环境搭建的整体过程与步骤" class="headerlink" title="git的安装与环境搭建的整体过程与步骤"></a>git的安装与环境搭建的整体过程与步骤</h2><h3 id="一-下载git安装包"><a href="#一-下载git安装包" class="headerlink" title="一. 下载git安装包"></a>一. 下载git安装包</h3><blockquote>
+<p>关于下载，就不多说了，可以直接在百度上搜索git，找到官网直接下载;</p>
+</blockquote>
+<p>请到git的官网上直接下载，下面是官网地址和跳转链接：</p>
+<ul>
+<li><a href="http://git-scm.com/download/" target="_blank" rel="external">http://git-scm.com/download/</a></li>
+<li><a href="http://git-scm.com/download/" target="_blank" rel="external">点击这里可以直接跳转到git下载页面</a></li>
+</ul>
+<h3 id="二-测试笔记本是否安装git"><a href="#二-测试笔记本是否安装git" class="headerlink" title="二. 测试笔记本是否安装git"></a>二. 测试笔记本是否安装git</h3><ul>
+<li>1.使用<strong>WIN+R</strong>快捷键，输入<strong>cmd</strong>，回车，打开Dos命令行；</li>
+<li>2.输入<strong>git</strong>或者<strong>git –version</strong>，回车；</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%2001.png" alt="01"><blockquote>
+<p>上图说明该笔记本上未配置git</p>
+<h3 id="三-git的安装"><a href="#三-git的安装" class="headerlink" title="三. git的安装"></a>三. git的安装</h3></blockquote>
+</li>
+<li><ol>
+<li>下载好git安装包之后，直接双击安装，点击<strong>next</strong></li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%201.png" alt="01"></li>
+<li><ol>
+<li>安装的路径，默认是在C盘，你也可以自定义路径；</li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%202.png" alt="01"></li>
+<li><ol>
+<li>点击下一步，这些是默认勾选的，如果你不需要<strong>Git Bash Here</strong>和<strong>Git GUI Here</strong>，可以不勾选这两项；</li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%203.png" alt="01"></li>
+<li><ol>
+<li>默认文件夹为Git，建议不要修改，点击下一步；</li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%204.png" alt="01"></li>
+<li><ol>
+<li>如果用于<strong>普通使用</strong>，勾选<strong>第一项</strong>；如果<strong>个人使用</strong>，可勾选<strong>第二项</strong>；</li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%205.png" alt="01"></li>
+<li><ol>
+<li>默认勾选第一项；</li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%206.png" alt="01"></li>
+<li><ol>
+<li>默认勾选第一项；</li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%207.png" alt="01"></li>
+<li><ol>
+<li>默认勾选第一项，点击next；</li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%208.png" alt="01"></li>
+<li><ol>
+<li>默认勾选第一项，点击<strong>Install</strong>，进行安装；</li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%209.png" alt="01"></li>
+<li><ol>
+<li>等待安装完成；</li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%2010.png" alt="01"><h3 id="四-接下来进行git的环境变量配置"><a href="#四-接下来进行git的环境变量配置" class="headerlink" title="四. 接下来进行git的环境变量配置"></a>四. 接下来进行git的环境变量配置</h3></li>
+<li><ol>
+<li>找到<strong>Git</strong>文件夹，进入到<strong>cmd</strong>文件夹目录下，复制该文件路径；</li>
+</ol>
+</li>
+<li>以我的地址为例：<strong>C:\Program Files\Git\cmd</strong>；<blockquote>
+<p><strong>注意</strong>：路径一定要到cmd这个文件夹下；</p>
+</blockquote>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%2012.png" alt="01"></li>
+<li><ol>
+<li>右键<strong>我的电脑</strong>&gt;点击<strong>属性</strong>&gt;点击<strong>高级系统设置</strong><ul>
+<li>进入<strong>系统属性</strong>&gt;点击<strong>高级</strong>&gt;选中<strong>系统变量下的Path</strong>点击编辑&gt;将刚才复制的路径粘贴到变量值后面&gt;点击<strong>确定</strong>&gt;<strong>确定</strong>&gt;<strong>确定</strong>即可；</li>
+<li>以我的为例：追加<strong>;C:\Program Files\Git\cmd</strong>;<blockquote>
+<p><strong>注意</strong>：在添加Path路径时，如果之前变量值的末尾以<strong>英文分号</strong>结尾，可以直接添加，否则一定记得先添加<strong>添加英文分号，再追加新增的变量值</strong>；<br>也可以养成这样的习惯，每次添加新的变量值之后都以英文分号结尾；</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%2013.png" alt="01"><h3 id="五-测试git环境是否配好"><a href="#五-测试git环境是否配好" class="headerlink" title="五. 测试git环境是否配好"></a>五. 测试git环境是否配好</h3></li>
+<li>记得重新打开cmd，输入git命令即可，如下图说明配置成功；<blockquote>
+<p>一定要重新打开cmd，不然之前打开的cmd还是找不到git;</p>
+</blockquote>
+</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%2014.png" alt="01"></li>
+<li>或者输入<strong>git –version</strong>，如下所示说明配置成功；</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%2015.png" alt="01"></li>
+<li>输入git -v或者git -version都是无效命令，<strong>git –version</strong>才有效！！！</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%2016.png" alt="01"><h3 id="六-因项目需要，使用git替换bower的请求协议，不需要的可以不做修改；"><a href="#六-因项目需要，使用git替换bower的请求协议，不需要的可以不做修改；" class="headerlink" title="六. 因项目需要，使用git替换bower的请求协议，不需要的可以不做修改；"></a>六. 因项目需要，使用git替换bower的请求协议，不需要的可以不做修改；</h3></li>
+<li>打开cmd，输入命令：</li>
+<li>git config –global url.”<a href="https://&quot;.insteadOf" target="_blank" rel="external">https://&quot;.insteadOf</a> git://   ，回车即可；</li>
+<li><img src="http://olrychps7.bkt.clouddn.com/aImage%2017.png" alt="01"></li>
+</ul>
+<p>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+<h3 id="到这里git环境已经搭建好了，最近找工作好久没有写博客了，现在就利用休息时间，整理一下最近项目需要的环境出篇博客，如有不正确的地方，希望各位大神不吝赐教，我的邮箱地址：zhouminghangQDGCS-163-com"><a href="#到这里git环境已经搭建好了，最近找工作好久没有写博客了，现在就利用休息时间，整理一下最近项目需要的环境出篇博客，如有不正确的地方，希望各位大神不吝赐教，我的邮箱地址：zhouminghangQDGCS-163-com" class="headerlink" title="到这里git环境已经搭建好了，最近找工作好久没有写博客了，现在就利用休息时间，整理一下最近项目需要的环境出篇博客，如有不正确的地方，希望各位大神不吝赐教，我的邮箱地址：zhouminghangQDGCS@163.com"></a>到这里git环境已经搭建好了，最近找工作好久没有写博客了，现在就利用休息时间，整理一下最近项目需要的环境出篇博客，如有不正确的地方，希望各位大神不吝赐教，我的邮箱地址：zhouminghangQDGCS@163.com</h3><pre><code>--------------明天有太多美好，叫我怎敢轻易辜负！-----------------
+
+
+                                                                    --呆萌小二郎zmh
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/04/18/项目环境的搭建/git安装与环境搭建/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-项目问题/01-环境配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h1 id="配置Tomcat"><a href="#配置Tomcat" class="headerlink" title="配置Tomcat"></a>配置Tomcat</h1><hr>
+        
+          <a class="article-more-a" href="/2017/03/29/项目问题/01-环境配置/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/29/项目问题/01-环境配置/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-JavaScript/04-return" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -459,86 +637,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/02/23/vuejs/01-vue第一篇/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-mySummary/23-ES6语法2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h1 id="ES6语法-（第二篇）"><a href="#ES6语法-（第二篇）" class="headerlink" title="ES6语法 （第二篇）"></a>ES6语法 （第二篇）</h1><hr>
-<p>学习就是一个发现问题、解决问题，下次遇见这个坑直接跳过的过程，接上一篇接着写，写博客虽然浪费时间，但是习惯就好，多总结记得更牢固</p>
-        
-          <a class="article-more-a" href="/2017/02/23/mySummary/23-ES6语法2/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/23/mySummary/23-ES6语法2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-mySummary/22-总结ES6新语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h1 id="ES6语法新特性（第一篇）"><a href="#ES6语法新特性（第一篇）" class="headerlink" title="ES6语法新特性（第一篇）"></a>ES6语法新特性（第一篇）</h1><hr>
-<p>昨天被问到ES6，脑子有点卡壳了，之前也专门学习过，今天就花点时间整理一下系统化自己的知识链；<br>JavaScript是由ECMAscript、BOM、DOM组成，ECMAScript实际上就是一个标准，用于规范语法和语义；<br>
-        
-          <a class="article-more-a" href="/2017/02/23/mySummary/22-总结ES6新语法/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/23/mySummary/22-总结ES6新语法/">展开全文 >></a>
         </p>
       
 
